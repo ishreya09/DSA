@@ -1,0 +1,48 @@
+GREEDY
+Please go ahead and attempt all the questions to get the feel of the Greedy Algorithm.
+The greedy Algorithm is the most generalized topic from a story-based question's point of view. 
+One of the most asked topics in OA for almost all Tier-2 Companies, couple of Tier-1 as well.
+
+General Approach: Try to approach the problem from a general mindset rather than thinking from 
+a program point of view. Once you get that, slowly try to link it in terms of programming, followed by DSA. 
+Usually, the approach to the majority of the questions(not always true though) is, it requires sorting and 
+based on the question asked you need to tweak your sorted output!.
+
+NOTE: ALL THE QUESTIONS MAY NOT BE SOLELY TAGGED TO GREEDY, MAY REQUIRE OTHER CONCEPTS AS WELL.
+
+Here you go...
+Leetcode:
+
+1221
+1827
+1217
+1710
+2078
+2144
+409
+860
+1005
+455
+605
+1877
+763
+1605
+921
+861
+1338
+1433
+1753
+1833
+1247
+1011
+122
+1029
+621
+11
+767
+1855
+134
+55
+1465
+1881
+857"
