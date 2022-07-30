@@ -42,14 +42,10 @@ using namespace std;
 class Solution {
 public:
     int minCostToMoveChips(vector<int>& position) {
-        // find the maximum number of frequency of a pos 
-        // use a map 
-        // then transfer all the rest chips to one position-meaning 
-        // in case of same frequency of all 
-        // check for the pos with minimum cost and swaps
         
         int cost =0; // cost to move the chips
-        // creating a map to store the frequency
+
+        // creating a map to store the frequency of all the chips
         map<int,int> frequency;
 
         // stl library functions uses quick sort 
