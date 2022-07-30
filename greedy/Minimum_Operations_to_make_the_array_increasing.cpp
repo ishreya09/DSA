@@ -47,13 +47,23 @@ class Solution
 {
     public:
         int minOperations(vector<int> &num){
-            int count=0;// counts the minimum number of operations required to make 
-            // the array strictly increasing
+            /*
+            Algorithm
+
+            Since we have to make the Array Strictly increasing in minimum number of operations
+            1. Iterate through the vector and check if the previous number in the array is greater than the next number
+            2. If the above condition is true, take the difference of both of them 
+            3. Add that difference +1 to the next number in the vector
+            4. add difference+1 to the count as well as we can increment one element only once
+            
+            */
+
+            int count=0;
 
             for (int i=0; i<num.size()-1; i++){ // num.size()-1 is done so as to avoid index error
                 if (num[i]>= num[i+1]){
-                    int m = num[i]-num[i+1]; // checking the difference
-                    num[i+1] += m+1; // incrementing the number
+                    int m = num[i]-num[i+1]; 
+                    num[i+1] += m+1; 
                     count += m+1;  // number of times required to make the 
                     // next number greater the previous number
                 }

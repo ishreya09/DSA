@@ -63,7 +63,7 @@ public:
         
         int i=0;
         
-        while(isOrder(nums)==0) // 
+        while(isOrder(nums)==0) //  not efficient
         {
             if(nums[i]>=nums[i+1])
             {

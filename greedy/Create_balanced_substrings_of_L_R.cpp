@@ -46,15 +46,25 @@ public:
     int balancedStringSplit(string s)
     {
 
+        /*
+        Algorithm
+
+        Using Greedy Algorithm
+        Greedy means that u have to grab it at that instant without thinking of other outcomes
+
+        1. Keep a count of R and L appearing in the string
+        2. Whenever the count of R and L is going to be same, we can count that as one substring in this ques
+        3. After counting the substring, we make the count for R and L character to 0 for another substring 
+        4. And repeat the above process until we traverse through the string.
+
+        */
+
         int r = 0, l = 0; // to count the number of R and L in the substring
         int count = 0;    // for number of substrings
         int i = 0;        // for index
 
-        // now we need to check the string using greedy algorithm
-        // while we go from letter by letter - we need to check if there is equal number of
-        // R and L in the substring and then count it
+   
 
-        // Greedy means that u have to grab it at that instant without thinking of other outcomes
         while (s[i] != 0) //  s[i] ! = Null Character
                           // Null character have ASCII 0
         {

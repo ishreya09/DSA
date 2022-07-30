@@ -41,28 +41,24 @@ using namespace std;
 
 class Solution {
 public:
-    int minCostToMoveChips(vector<int>& position) {
+    int minCostToMoveChips(vector<int>& position) {     
+        // Algorithm
+
+        // All the even numbers of the stack can be passed to one even number stack - as 
+        // even num + 2 or even num -2 leads to another even number with a total cost of 0
+        // Same way - odd numbers can also be moved to another odd position 
+        // so odd numbers can be shifted to adjacent odd position and same with even numbers
+        // All these operations cost us 0
+        // now we can check only the number of odd and even numbers to check for the minimum cost
         
-        int cost =0; // cost to move the chips
-
-        // creating a map to store the frequency of all the chips
-        map<int,int> frequency;
-
-        // stl library functions uses quick sort 
-
-        for (int i=0; i<position.size(); i++){
-            frequency[position[i]]++;
+        int even=0,odd=0;
+        for (int i=0; i<position.size();i++){
+            if (position[i]%2==0)
+                even++;
+            else
+                odd++;
         }
-        
-        // for finding the maximum
-        int num= frequency.begin()->first;
-        int max= frequency.begin()->second;
-        // We write ++frequency.begin() as the first map member is already defined by max and num
-        // since an iterator is returned pointing to the first pointer, we increment the pointer before hand itself in initialization
-        for (auto i = ++frequency.begin(); i!= frequency.end(); i++){
-            
-        }
-        
-        
+        // min and max functions return min or max of any of the two
+        return min(even,odd);
     }
 };
