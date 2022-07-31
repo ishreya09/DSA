@@ -1,6 +1,8 @@
 /*
 2144. Minimum Cost of Buying Candies With Discount
 
+https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/
+
 A shop is selling candies at a discount. For every two candies sold, the shop gives a third candy for free.
 
 The customer can choose any candy to take away for free as long as the cost of the chosen

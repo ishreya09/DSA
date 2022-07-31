@@ -1,5 +1,8 @@
 /*
 455. Assign Cookies
+easy
+
+https://leetcode.com/problems/assign-cookies/
 
 Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.
 

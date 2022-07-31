@@ -1,0 +1,12 @@
+* Represents number of times getting stuck in that problem
+# represents questions which I solved and I really liked them
+
+Leetcode
+
+Greedy Algorithm
+
+*1827
+#*1217
+*1710
+#*763
+#*1605

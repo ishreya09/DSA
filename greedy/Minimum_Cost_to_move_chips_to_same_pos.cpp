@@ -1,5 +1,8 @@
 /*
 1217. Minimum Cost to Move Chips to The Same Position
+Easy *#
+
+https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/
 
 We have n chips, where the position of the ith chip is position[i].
 

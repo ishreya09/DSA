@@ -1,7 +1,9 @@
 /*
 1827. Minimum Operations to Make the Array Increasing
 
-Easy
+Easy * #
+
+https://leetcode.com/problems/minimum-operations-to-make-the-array-increasing/
 
 You are given an integer array nums (0-indexed). In one operation, you can choose an element of the array and increment it by 1.
 

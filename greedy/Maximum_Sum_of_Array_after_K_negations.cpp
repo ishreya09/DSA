@@ -1,6 +1,8 @@
 /*
 1005. Maximize Sum Of Array After K Negations
 
+https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/
+
 Given an integer array nums and an integer k, modify the array in the following way:
 
 choose an index i and replace nums[i] with -nums[i].

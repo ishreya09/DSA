@@ -1,6 +1,6 @@
 /*
 763. Partition Labels
-Medium
+Medium * #
 
 https://leetcode.com/problems/partition-labels/
 
