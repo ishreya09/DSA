@@ -33,6 +33,9 @@ Constraints:
 
 */
 
+// Runtime: 113 ms, faster than 6.16% of C++ online submissions for Assign Cookies.
+// Memory Usage: 17.5 MB, less than 79.08% of C++ online submissions for Assign Cookies.
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,8 +49,9 @@ public:
         1. Check the size of g and s- if its greater than 0, only then we proceed.
         2. Sort both g and s vectors
         3. Start checking simentanously for greed factor <= size of cookie (2 loops- one for g and one for s)
-        4. using Greedy Algorithm , we can atleast say that it will always be wise to start checking from j=i,
-        being the least way where we can find right cookie for the greed.
+        4. the value of j need not be written as j=i or set to 0 as it while checking simentaneously, 
+         the next child with greater greed would also need a greater j and also it would cause repitions in giving the cookie which we don't want
+        
 
         */
 
@@ -74,19 +78,23 @@ public:
         while (f)
         {
             bool flag = true;
-            j = i;
+            // j=i;
+            // the value of j need not be written as j=i or set to 0 as it while checking simentaneously, 
+            // the next child with greater greed would also need a greater j and also it would cause repitions in giving the cookie which we don't want
             while (flag)
             {
                 if (g[i] <= s[j])
                 {
                     // cout<< "hello\n";
                     c++;
+                    cout<< g[i]<< "\t"<< s[j]<<"\t"<< c << endl;
                     flag = false;
                 }
 
                 j++;
                 if (j >= s.size())
                 {
+                    // cout<< g[i]<< "\t"<< s[j]<< endl;
                     flag = false;
                     f = false; // if we can't find the cookie for the current child with greed g[i]
                     // then we also can't find a match for rest of the children as well
@@ -221,6 +229,9 @@ int main(int argc, char const *argv[])
 
     s= {29,310,236,441,200,267,115,59,277,42,361,112,483,104,338,69,438,55,318,470,20,490,455,119,259,51,492,50,160,414,38,289,429,446,350,412,12,515,367,397,122,35,522,355,448,266,333,
     500,211,226,203,366,240,324,111,280,520,321,211,360,437,292,512,161,85,139,12,211,236,213,377,85,494};
+
+    // g= {1,2,3};
+    // s= {1,1};
     Solution a;
     cout << a.findContentChildren(g, s); // expected 70 but coming 73 for this test case
     return 0;
