@@ -54,7 +54,7 @@ public:
         2. If there is a negative number - turn that into positive at once
         3. If there is a 0 in the array - it should be the second point to place all the negations
         as we can do negations on a single number more than once - creating maximum sum
-        4. If the above 2 cases are taken care of - then use negation on the smallest number possible -
+        4. If the above 2 cases are taken care of - then use negation on the smallest number after sorting the array again-
         this minimum positive number can be applied with negation multiple times to get the maximum sum.
         Zero is surely not encountered if we come to this case and so , nums[0] will be the minimum number to flip for max sum
 
