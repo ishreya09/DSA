@@ -5,8 +5,12 @@ Leetcode
 
 Greedy Algorithm
 
+Done
 *1827
 #*1217
 *1710
 #*763
+
+REDO
 #*1605
+*921
