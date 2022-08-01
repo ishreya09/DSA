@@ -51,14 +51,15 @@ Leetcode:
 857
 
 
-rest easy
+other easy greedy ques
 561
 680
 942
 976
-
-1013
 1323
+
+1013 - one test case error
+
 1403
 1736
 1903
