@@ -35,8 +35,8 @@ s[i] is either 'I' or 'D'.
 
 */
 
-// Runtime: 11 ms, faster than 35.06% of C++ online submissions for DI String Match.
-// Memory Usage: 8.6 MB, less than 84.87% of C++ online submissions for DI String Match. 
+// Runtime: 7 ms, faster than 71.83% of C++ online submissions for DI String Match.
+// Memory Usage: 8.9 MB, less than 67.77% of C++ online submissions for DI String Match.
 
 #include <bits/stdc++.h>
 using namespace std;
