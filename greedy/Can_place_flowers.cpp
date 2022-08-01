@@ -58,15 +58,7 @@ public:
         6. Keep a check of n always so that it doesn't go below 0
         */
 
-        // checking for the first position
-
-        // cout << "initially \n"; 
-        // for (int i=0;i<flowerbed.size();i++){
-        //     for (int j=0;j<60; j++)
-        //         cout << flowerbed[i++]<< " ";
-        //     cout<< endl;
-            
-        // }
+        
 
         if (n==0){
             return true;
