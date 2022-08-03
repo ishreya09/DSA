@@ -8,7 +8,7 @@ segment is it stored?
 
 3. Why is & used in vector while using pass by reference- how are the pointers working in that case?
 
-4. 
+4. Can't we use substrings like str[0:3] ?
 
  
 

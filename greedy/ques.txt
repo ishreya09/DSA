@@ -63,9 +63,9 @@ other easy greedy ques
 1974
 2027
 2160
+2224
+2259
 
 1013 - one test case error
 
-2224 
-2259
 2335
