@@ -1,4 +1,3 @@
-// Not all test cases get passed
 
 /*
 1605. Find Valid Matrix Given Row and Column Sums
@@ -47,14 +46,12 @@ sum(rows) == sum(columns)
 */
 
 
-
 /*
 Algorithm
 
 1. for a m*n matrix, check the sum of row and corresponding min sum of col 
 2. Assign the min value of the two and substract the min value from both of them
-3. Now check for which one among of them is zero and do i++ or j++ accordingly
-4. 
+3. Increment i and j accordingly and check.
 
 */
 
@@ -66,40 +63,16 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int>> restoreMatrix(vector<int>& rowSum, vector<int>& colSum) {
-        int n= colSum.size(); 
-        int m =rowSum.size();
-        // a way to create m*n matrix capacity vector
-        vector <vector<int>> ans(m,vector<int>(n,0));
-        int i=0,j=0;
-
-        while (i<n && j<m){
-            cout<< i<<"\t"<< j<< "\t"<< rowSum[i] <<"\t" << colSum[j]<<endl;
-            int x= min(rowSum[i],colSum[j]);
-            // we can write like this if initalized as above
-            ans[i][j]=x; // assigning the min val
-            rowSum[i]-=x;
-            colSum[j]-=x;
-            cout<< i<<"\t"<< j<< "\t"<< rowSum[i] <<"\t" << colSum[j]<<endl;
-            if (rowSum[i]==0){
-                i++;
-            }
-            if (colSum[j]==0){
-                j++;
+        int m=rowSum.size();
+        int n=colSum.size();
+        vector<vector<int>> ans(m,vector<int>(n,0));
+        for(int i=0;i<rowSum.size();i++){
+            for(int j=0;j<colSum.size() and rowSum[i]>0;j++){
+                ans[i][j]=min(rowSum[i],colSum[j]);
+                rowSum[i]-=ans[i][j];
+                colSum[j]-=ans[i][j];
             }
         }
-
         return ans;
     }
 };
-
-int main(){
-    vector<int> row={2,3};
-    vector<int> col={1,2,2};
-    vector<vector<int>> ans= Solution().restoreMatrix(row,col);
-    for (int i=0; i<row.size();i++){
-        for (int j=0;j<col.size();j++){
-            cout<< ans[i][j]<<"\t";
-        }
-        cout<<endl;
-    }
-}
