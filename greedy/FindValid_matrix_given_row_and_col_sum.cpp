@@ -45,15 +45,7 @@ sum(rows) == sum(columns)
 
 */
 
-
-#include <bits/stdc++.h>
-using namespace std;
-
-// figure out later
-class Solution {
-public:
-    vector<vector<int>> restoreMatrix(vector<int>& rowSum, vector<int>& colSum) {
-        /*
+/*
         Algorithm
         
         1. for an n*n matrix - we have n^2 elements and (n^2 -2n) elements to be assumed 
@@ -63,7 +55,15 @@ public:
         3. Adjust 
         
         3. The difference we took above will tell us the numbers for the other elements in the row 
-        */
+*/
+// figure out later
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    vector<vector<int>> restoreMatrix(vector<int>& rowSum, vector<int>& colSum) {
 
        
 

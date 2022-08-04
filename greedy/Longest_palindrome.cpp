@@ -30,15 +30,7 @@ s consists of lowercase and/or uppercase English letters only.
 
 */
 
-// Runtime: 7 ms, faster than 37.08% of C++ online submissions for Longest Palindrome.
-// Memory Usage: 6.7 MB, less than 15.08% of C++ online submissions for Longest Palindrome.
 
-#include<bits/stdc++.h>
-using namespace std;
-
-class Solution {
-public:
-    int longestPalindrome(string s) {
         /*
         Algorithm
 
@@ -50,6 +42,13 @@ public:
         be one single letter which can make it palindrome 
         
         */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int longestPalindrome(string s) {
        map <char,int> f; // frequency of letters
        for (int i=0;s[i]!=0;i++)
        {

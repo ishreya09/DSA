@@ -42,14 +42,6 @@ s[i] is either 'X' or 'O'.
 #include <bits/stdc++.h>
 using namespace std;
 
-// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Minimum Moves to Convert String.
-// Memory Usage: 6.3 MB, less than 98.83% of C++ online submissions for Minimum Moves to Convert String.
-
-class Solution
-{
-public:
-    int minimumMoves(string s)
-    {
         /*
         Algorithm
 
@@ -57,6 +49,14 @@ public:
         2. Repeat 1 till we reach the end of the string
         3. Nothing happens if O is encountered.
         */
+
+
+
+class Solution
+{
+public:
+    int minimumMoves(string s)
+    {
         int move = 0;
 
         for (int i= 0; i<s.length();i++){

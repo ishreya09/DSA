@@ -39,20 +39,23 @@ Constraints:
 1 <= position[i] <= 10^9
 */
 
+/*
+        Algorithm
+
+        All the even numbers of the stack can be passed to one even number stack - as 
+        even num + 2 or even num -2 leads to another even number with a total cost of 0
+        Same way - odd numbers can also be moved to another odd position 
+        so odd numbers can be shifted to adjacent odd position and same with even numbers
+        All these operations cost us 0
+        now we can check only the number of odd and even numbers to check for the minimum cost
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
 class Solution {
 public:
     int minCostToMoveChips(vector<int>& position) {     
-        // Algorithm
-
-        // All the even numbers of the stack can be passed to one even number stack - as 
-        // even num + 2 or even num -2 leads to another even number with a total cost of 0
-        // Same way - odd numbers can also be moved to another odd position 
-        // so odd numbers can be shifted to adjacent odd position and same with even numbers
-        // All these operations cost us 0
-        // now we can check only the number of odd and even numbers to check for the minimum cost
         
         int even=0,odd=0;
         for (int i=0; i<position.size();i++){

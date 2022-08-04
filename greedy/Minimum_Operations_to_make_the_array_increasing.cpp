@@ -38,18 +38,7 @@ Constraints:
 1 <= nums[i] <= 104
 */
 
-
-// Runtime   Memory
-//   15ms    15.8MB
-
-#include<bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-    public:
-        int minOperations(vector<int> &num){
-            /*
+/*
             Algorithm
 
             Since we have to make the Array Strictly increasing in minimum number of operations
@@ -58,7 +47,15 @@ class Solution
             3. Add that difference +1 to the next number in the vector
             4. add difference+1 to the count as well as we can increment one element only once
             
-            */
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+    public:
+        int minOperations(vector<int> &num){
 
             int count=0;
 

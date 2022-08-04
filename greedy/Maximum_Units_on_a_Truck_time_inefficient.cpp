@@ -37,32 +37,22 @@ Constraints:
 1 <= numberOfBoxesi, numberOfUnitsPerBoxi <= 1000
 1 <= truckSize <= 106
 */
+/*
+        Algorithm
+        1. sort the 2D array with respect to units per box
+        2. Start taking the boxes and multiply it by its units until we reach the maximum
+        number of boxes
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
-
-
-
-
-
-
-// Runtime: 723 ms, faster than 5.04% of C++ online submissions for Maximum Units on a Truck.
-// Memory Usage: 16 MB, less than 50.71% of C++ online submissions for Maximum Units on a Truck.
 
 class Solution
 {
 public:
     int maximumUnits(vector<vector<int>> &boxTypes, int truckSize)
-    {
         // way to accept 2D vector (dynamic Array)
-
-        /*
-        Algorithm
-        1. sort the 2D array with respect to units per box
-        2. Start taking the boxes and multiply it by its units until we reach the maximum
-        number of boxes
-        */
-
+    {
         // Sorting using Selection Sort in decending order
         int max;
         int nBox, nUnit;

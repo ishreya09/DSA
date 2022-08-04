@@ -38,18 +38,6 @@ Constraints:
 current and correct are in the format "HH:MM"
 current <= correct
 */
-
-// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Minimum Number of Operations to Convert Time.
-// Memory Usage: 6 MB, less than 12.62% of C++ online submissions for Minimum Number of Operations to Convert Time.
-
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    int convertTime(string current, string correct)
-    {
         /*
         Algorithm
         1. In one operation you can increase the time current by 1, 5, 15, or 60 minutes.
@@ -60,6 +48,17 @@ public:
         6. Put the if statements in loop with relevant conditions
 
         */
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    int convertTime(string current, string correct)
+    {
         int h_cur =( current[0]-'0') * 10 + (current[1]-'0');
         int m_cur =( current[3]-'0') * 10 + (current[4]-'0');
         int h_cor =( correct[0]-'0') * 10 +( correct[1]-'0');

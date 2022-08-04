@@ -32,18 +32,7 @@ nums.length == 2 * n
 -104 <= nums[i] <= 104
 */
 
-
-// Runtime: 65 ms, faster than 78.85% of C++ online submissions for Array Partition.
-// Memory Usage: 28.3 MB, less than 47.92% of C++ online submissions for Array Partition.
-
-#include <bits/stdc++.h>
-using namespace std;
-
-
-class Solution {
-public:
-    int arrayPairSum(vector<int>& nums) {
-        /*
+/*
         Algorithm
         
         1. Sort the array in accending order. Length of array is always even 
@@ -52,7 +41,16 @@ public:
         This should give us the minimum sum. 
         3. The above step now basically means to add alternate elements of the array.
         
-        */
+*/
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class Solution {
+public:
+    int arrayPairSum(vector<int>& nums) {
         sort (nums.begin(),nums.end());
         int sum=0;
         for (int i=0; i<nums.size(); i+=2){

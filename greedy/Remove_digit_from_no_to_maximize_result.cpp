@@ -38,12 +38,18 @@ number consists of digits from '1' to '9'.
 digit is a digit from '1' to '9'.
 digit occurs at least once in number.
 */
+        /*
+        Algorithm
+
+        1. Go on removing each occurance of the required digit from the number
+        2. Check and compare and store in max
+        3. Compare will be a function which compares ascii of 2 strings
+        4. To avoid error, iniialize num1 and max to "0"
+        */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-// Runtime: 15 ms, faster than 5.53% of C++ online submissions for Remove Digit From Number to Maximize Result.
-// Memory Usage: 7.8 MB, less than 5.62% of C++ online submissions for Remove Digit From Number to Maximize Result.
 
 class Solution
 {
@@ -66,14 +72,6 @@ public:
 
     string removeDigit(string number, char digit)
     {
-        /*
-        Algorithm
-
-        1. Go on removing each occurance of the required digit from the number
-        2. Check and compare and store in max
-        3. Compare will be a function which compares ascii of 2 strings
-        4. To avoid error, iniialize num1 and max to "0"
-        */
         string num1 = "0", max = "0";
 
         for (int i = 0; i < number.length(); i++)

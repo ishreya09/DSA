@@ -38,17 +38,6 @@ n is even.
 
 */
 
-// Runtime: 734 ms
-// Memory Usage: 102 MB, 
-
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    int minPairSum(vector<int> &nums)
-    {
         /*
         Algorithm
 
@@ -59,6 +48,16 @@ public:
         4. create another vector to store the pairwise sum of size len/2
         5. find the maximum number
         */
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    int minPairSum(vector<int> &nums)
+    {
 
         // Sort the vector in descending order
         sort(nums.begin(), nums.end(), greater<int>());

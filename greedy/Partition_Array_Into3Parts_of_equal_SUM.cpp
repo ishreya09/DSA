@@ -34,14 +34,6 @@ Constraints:
 
 */
 
-// one test case error
-
-#include<bits/stdc++.h>
-using namespace std;
-
-class Solution {
-public:
-    bool canThreePartsEqualSum(vector<int>& arr) {
         /*
         Algorithm
         
@@ -52,6 +44,16 @@ public:
         4. Now, the third should also be equal to the above sum
         
         */
+
+
+// one test case error
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    bool canThreePartsEqualSum(vector<int>& arr) {
         int need= accumulate (arr.begin(), arr.end(),0); // needed sum
         cout << need<< endl;
         

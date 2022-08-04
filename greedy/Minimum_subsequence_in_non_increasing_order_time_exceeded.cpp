@@ -37,14 +37,6 @@ Constraints:
 // https://leetcode.com/submissions/detail/762655865/
 // gives time exceeded error
 
-#include<bits/stdc++.h>
-using namespace std;
-
-
-class Solution {
-public:
-    vector<int> minSubsequence(vector<int>& nums) 
-    {
         /*
         Algorithm
         
@@ -55,6 +47,15 @@ public:
         5. the slider k value will be the last index of the subsequence
         
         */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+class Solution {
+public:
+    vector<int> minSubsequence(vector<int>& nums) 
+    {
         vector <int> ans;
         if (nums.size()==1){
             return nums;

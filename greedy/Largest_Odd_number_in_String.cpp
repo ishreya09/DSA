@@ -35,8 +35,23 @@ num only consists of digits and does not contain any leading zeros.
 
 */
 
-// Runtime: 30 ms, faster than 80.66% of C++ online submissions for Largest Odd Number in String.
-// Memory Usage: 15.4 MB, less than 13.58% of C++ online submissions for Largest Odd Number in String.
+
+        // num only consists of digits and does not contain any leading zeros.
+        // to insert a string from the back
+        // s.insert(s.end(),1,'3');
+        // to insert a string from the start
+        // s.insert(s.begin(),1,'3');
+        /*
+        Algorithm
+
+        1. Check the last digit first - if its odd - then return the whole      
+        string directly without any further checking
+        2. To check if a digit is odd or even - use this condition-
+        {
+        character- '0' %2 ==0
+        3. If all the digits are even , there is no subsequence
+        4.
+        */
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -47,21 +62,6 @@ public:
     string largestOddNumber(string num)
     {
 
-        // num only consists of digits and does not contain any leading zeros.
-        // to insert a string from the back
-        // s.insert(s.end(),1,'3');
-        // to insert a string from the start
-        // s.insert(s.begin(),1,'3');
-        /*
-        Algorithm
-
-        1. Check the last digit first - if its odd - then return the whole      string directly without any further checking
-        2. To check if a digit is odd or even - use this condition-
-        {
-        character- '0' %2 ==0
-        3. If all the digits are even , there is no subsequence
-        4.
-        */
 
         int n = num.length();
         if ((num[n - 1] - '0') % 2 != 0)

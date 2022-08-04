@@ -32,18 +32,7 @@ Constraints:
 
 1000 <= num <= 9999
 */
-
-#include <bits/stdc++.h>
-using namespace std;
-
-// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Minimum Sum of Four Digit Number After Splitting Digits.
-// Memory Usage: 5.9 MB, less than 68.42% of C++ online submissions for Minimum Sum of Four Digit Number After Splitting Digits.
-
-class Solution
-{
-public:
-    int minimumSum(int num)
-    {
+       
         /*
         Algorithm
 
@@ -53,6 +42,16 @@ public:
         4. similarly the second number will be given by - arr[1]*10+ arr[2]
         5. return the sum
         */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+
+class Solution
+{
+public:
+    int minimumSum(int num)
+    {
 
         vector<int> a(4);
 

@@ -31,18 +31,8 @@ There are no two adjacent flowers in flowerbed.
 
 */
 
-// Runtime: 39 ms, faster than 16.68% of C++ online submissions for Can Place Flowers.
-// Memory Usage: 20.2 MB, less than 88.18% of C++ online submissions for Can Place Flowers.
 
 
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    bool canPlaceFlowers(vector<int> &flowerbed, int n)
-    {
         /*
         Algorithm
 
@@ -57,6 +47,15 @@ public:
         5. Go in the same order as above
         6. Keep a check of n always so that it doesn't go below 0
         */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    bool canPlaceFlowers(vector<int> &flowerbed, int n)
+    {
 
         
 
@@ -102,13 +101,7 @@ public:
         }
 
         cout << "n="<< n <<endl;
-        // cout << "\nafter planting \n"; 
-
-        // for (int i=0;i<flowerbed.size();i++){
-        //     for (int j=0;j<60; j++)
-        //         cout << flowerbed[i++]<< " ";
-        //     cout<< endl;
-        // }
+        
 
 
         return n == 0; // n will be zero if all the flowers get ploted
@@ -122,19 +115,6 @@ int main(int argc, char const *argv[])
     vector <int> fb={0,0,0,0,0};
     int n=2;
 
-    fb = {0,1,0,1,0,1,0,0,1,0,0,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,0,0,1,0,0,1,
-    0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,1,0,0,1,0,0,0,
-    0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,
-    1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,1,0,0,1,0,0,0,1,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,
-    1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,0,1,0,0,0,0,1,0,
-    0,0,1,0,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,
-    1,0,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1,0,1,0,1,0,0,1,0,1,0,0,1,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,1,0,0,1,0,1,0,
-    1,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,1,0,1,0,0,1,0,0,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,
-    0,1,0,0,0,0,1,0,0,0,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,1,0,1,0,
-    1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,0,0,1,0,1,0,1,0,
-    0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,
-    0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0};
-    n=25;
     Solution a;
     cout<<a.canPlaceFlowers(fb,n);
     return 0;

@@ -30,9 +30,19 @@ s consists of lowercase English letters.
 
 
 */
-
-// Runtime: 85 ms, faster than 45.52% of C++ online submissions for Valid Palindrome II.
-// Memory Usage: 19.5 MB, less than 96.08% of C++ online submissions for Valid Palindrome II.
+        /*
+        Algorithm
+        
+        We can at most delete one character for the string to make it palindrome, so directly return there
+        
+        1. Make a function to check Palindrome string within a range
+        2. Traverse through the string from the start and the end (Two Pointer) and check if they are equal or not 
+        3. If they are equal, do start ++, and end --
+        4. If they are not equal, check for palindrome at by skipping and check from start +1  to end
+        or check for palindrome by skiping and check from start to end -1
+        5. Instead of using start and end- go with i and n 
+        
+        */
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -49,19 +59,6 @@ public:
     }
 
     bool validPalindrome(string s) {
-        /*
-        Algorithm
-        
-        We can at most delete one character for the string to make it palindrome, so directly return there
-        
-        1. Make a function to check Palindrome string within a range
-        2. Traverse through the string from the start and the end (Two Pointer) and check if they are equal or not 
-        3. If they are equal, do start ++, and end --
-        4. If they are not equal, check for palindrome at by skipping and check from start +1  to end
-        or check for palindrome by skiping and check from start to end -1
-        5. Instead of using start and end- go with i and n 
-        
-        */
         int  i=0;
         // auto start= s.begin();
         int n= s.length();

@@ -37,15 +37,7 @@ num consists of only 6 and 9 digits.
 
 */
 
-// Runtime: 7 ms, faster than 8.10% of C++ online submissions for Maximum 69 Number.
-// Memory Usage: 5.9 MB, less than 50.40% of C++ online submissions for Maximum 69 Number.
 
-#include<bits/stdc++.h>
-using namespace std;
-
-class Solution {
-public:
-    int maximum69Number (int num) {
         /*
         Algorithm
         
@@ -63,6 +55,13 @@ public:
         2. add the number with 3 * pow(10,index) 
         (return num + 3 * pow(10, index) )
         */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int maximum69Number (int num) {
         vector <int> a(4);
         int i=3;
         int n=num; // num

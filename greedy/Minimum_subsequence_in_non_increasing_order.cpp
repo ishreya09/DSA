@@ -35,18 +35,9 @@ Constraints:
 */
 
 // https://leetcode.com/submissions/detail/762655865/
-// gives time exceeded error
 
-#include<bits/stdc++.h>
-using namespace std;
 
-// Runtime: 32 ms, faster than 5.40% of C++ online submissions for Minimum Subsequence in Non-Increasing Order.
-// Memory Usage: 10.6 MB, less than 60.28% of C++ online submissions for Minimum Subsequence in Non-Increasing Order.
 
-class Solution {
-public:
-    vector<int> minSubsequence(vector<int>& nums) 
-    {
         /*
         Algoritm
 
@@ -56,6 +47,15 @@ public:
         4. Calculate simetaneously and check - faster than previous one
         
         */
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+class Solution {
+public:
+    vector<int> minSubsequence(vector<int>& nums) 
+    {
         vector<int>result;
         sort(nums.begin(), nums.end());
         int sum1 =0;

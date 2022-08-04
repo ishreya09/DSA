@@ -37,19 +37,8 @@ s is a balanced string.
 
 // correct code
 
-// Runtime  Memory
-//	7 ms	6.2 MB
 
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    int balancedStringSplit(string s)
-    {
-
-        /*
+/*
         Algorithm
 
         Using Greedy Algorithm
@@ -60,7 +49,17 @@ public:
         3. After counting the substring, we make the count for R and L character to 0 for another substring 
         4. And repeat the above process until we traverse through the string.
 
-        */
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    int balancedStringSplit(string s)
+    {
+
 
         int r = 0, l = 0; // to count the number of R and L in the substring
         int count = 0;    // for number of substrings

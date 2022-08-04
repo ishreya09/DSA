@@ -49,18 +49,7 @@ Test data are generated such that at least two houses have different colors.
 */
 
 
-// Runtime: 4 ms, faster than 65.93% of C++ online submissions for Two Furthest Houses With Different Colors.
-// Memory Usage: 9.1 MB, less than 18.34% of C++ online submissions for Two Furthest Houses With Different Colors.
 
-
-
-#include<bits/stdc++.h>
-using namespace std;
-
-class Solution {
-public:
-    int maxDistance(vector<int>& colors) {
-        
         /*
         Algorithm -         
         Greedily, the maximum distance will come from either the pair of the leftmost house and possibly some house 
@@ -72,6 +61,15 @@ public:
         3. Check Further for any other chance of getting any maximum element 
         4. Since the constraint is less, this method works but might fail if larger constraints are given
         */
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int maxDistance(vector<int>& colors) {
+        
         int max=0;
         int l = colors.size();
         int k;

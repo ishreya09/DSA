@@ -37,9 +37,15 @@ It is guaranteed that you can produce a valid time from the given string.
 
 */
 
-// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Latest Time by Replacing Hidden Digits.
-// Memory Usage: 6 MB, less than 44.74% of C++ online submissions for Latest Time by Replacing Hidden Digits.
+        /*
+        Algorithm
 
+        1. The 0 th index can only have values- 0,1,2 - if 0th index has max 2
+        2. The 1st index can have values 0-9 - so 9 is the max value if 0 or 1 is there in 0th index - otherwise - 3.
+        3. The 3rd index can have value 0-5, so 5 is the max value
+        4. The 4th index can have value 0-9 , so 9 is the max value
+
+        */
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -50,15 +56,6 @@ class Solution
 public:
     string maximumTime(string time)
     {
-        /*
-        Algorithm
-
-        1. The 0 th index can only have values- 0,1,2 - if 0th index has max 2
-        2. The 1st index can have values 0-9 - so 9 is the max value if 0 or 1 is there in 0th index - otherwise - 3.
-        3. The 3rd index can have value 0-5, so 5 is the max value
-        4. The 4th index can have value 0-9 , so 9 is the max value
-
-        */
         if (time[0]=='?' && time[1]=='?' && time[3]=='?' && time[4]=='?'){
             time[0]='2';
             time[1]='3';

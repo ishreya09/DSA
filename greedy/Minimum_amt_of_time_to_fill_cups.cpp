@@ -48,8 +48,16 @@ amount.length == 3
 0 <= amount[i] <= 100
 */
 
-// Runtime: 6 ms, faster than 49.65% of C++ online submissions for Minimum Amount of Time to Fill Cups.
-// Memory Usage: 11.7 MB, less than 89.64% of C++ online submissions for Minimum Amount of Time to Fill Cups.
+
+        /*
+        Algorithm
+
+        1. Sort the vector in decending order
+        2. decrement the zeroth and first index by 1 and sort the array simentaneously
+        3. In this way, we choose the maximum number of pairs
+        4. This process is continued until zeroth index element is zero as well
+        */
+
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -59,14 +67,6 @@ class Solution
 public:
     int fillCups(vector<int> &amount)
     {
-        /*
-        Algorithm
-
-        1. Sort the vector in decending order
-        2. decrement the zeroth and first index by 1 and sort the array simentaneously
-        3. In this way, we choose the maximum number of pairs
-        4. This process is continued until zeroth index element is zero as well
-        */
         int count = 0;
         sort(amount.begin(), amount.end(), greater<int>());
         while (amount[0] != 0)

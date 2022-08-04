@@ -62,18 +62,6 @@ Constraints:
 word consists of lowercase English letters.
 
 */
-
-// Runtime: 3 ms, faster than 44.26% of C++ online submissions for Minimum Time to Type Word Using Special Typewriter.
-// Memory Usage: 6.1 MB, less than 85.69% of C++ online submissions for Minimum Time to Type Word Using Special Typewriter.
-
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    int minTimeToType(string word)
-    {
         /*
         Algorithm
 
@@ -84,6 +72,17 @@ public:
         to type the character
         4. Set the pointer to the current letter typed and check again
         */
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    int minTimeToType(string word)
+    {
         char p= 'a'; //pointer is pointing to a initially
         int t = 0; // time in seconds
         int d;

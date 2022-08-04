@@ -33,20 +33,6 @@ s[i] is either '(' or ')'.
 
 */
 
-// Runtime: 0 ms, faster than 100.00% of C++ online submissions for Minimum Add to Make Parentheses Valid.
-// Memory Usage: 6.2 MB, less than 85.41% of C++ online submissions for Minimum Add to Make Parentheses Valid.
-
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution {
-public:
-    int minAddToMakeValid(string s) {
-        // first approach
-        if (s.length() == 0){
-            return 2;
-        }
-        else {
             /*
             Algorithm 
 
@@ -60,6 +46,20 @@ public:
             1. Search for () and change it to null immediately
             2. Repeat the same until there is no () left in the string and then return the length of the string
             */
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int minAddToMakeValid(string s) {
+        // first approach
+        if (s.length() == 0){
+            return 2;
+        }
+        else {
             int op=0; // open paranthesis
             int cp=0; // closed paranthesis
 

@@ -42,8 +42,14 @@ Constraints:
 bills[i] is either 5, 10, or 20.
 */
 
-// Runtime: 271 ms, faster than 5.12% of C++ online submissions for Lemonade Change.
-// Memory Usage: 83.5 MB, less than 6.76% of C++ online submissions for Lemonade Change.
+
+        /*
+        Algorithm
+        1. get the frequency of 20,10 and 5 dollar bills using map and check simentaneously using if else ladder
+        2. For each 20 dollar bill, we need either 3 five dollars or 1 five and 1 ten
+        3. For each 10 dollar bill, we need 1 five dollar bill
+        4. Adjust the frequencies to check if the change is ample or not
+        */
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -53,15 +59,6 @@ class Solution
 public:
     bool lemonadeChange(vector<int> &bills)
     {
-        /*
-        Algorithm
-        1. get the frequency of 20,10 and 5 dollar bills using map and check simentaneously using if else ladder
-        2. For each 20 dollar bill, we need either 3 five dollars or 1 five and 1 ten
-        3. For each 10 dollar bill, we need 1 five dollar bill
-        4. Adjust the frequencies to check if the change is ample or not
-        */
-
-        //    int cost=0;
         bool change = true;
         map<int, int> f;
         for (int i = 0; i < bills.size(); i++)

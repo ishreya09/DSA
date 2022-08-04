@@ -26,9 +26,15 @@ Constraints:
 1 <= nums[i] <= 106
 */
 
+/*
+Algorithm
 
-// Runtime: 52 ms, faster than 63.20% of C++ online submissions for Largest Perimeter Triangle.
-// Memory Usage: 21.9 MB, less than 72.31% of C++ online submissions for Largest Perimeter Triangle.
+1. sort in decending order 
+2. initialize first and second side of triangle as first two elements of the array
+3. Iterate through the rest of the array and find a pair which satisfies triangle law
+4. If we don't find any third side in first iteration, shift first and second side of the triangle to adjacent sides
+and then check for third side for the rest of the array. 
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

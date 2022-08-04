@@ -36,19 +36,6 @@ Constraints:
 1 <= k <= 104
 
 */
-
-// Runtime: 16 ms, faster than 23.06% of C++ online submissions for Maximize Sum Of Array After K Negations.
-// Memory Usage: 9.2 MB, less than 24.04% of C++ online submissions for Maximize Sum Of Array After K Negations.
-
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    int largestSumAfterKNegations(vector<int> &nums, int k)
-    {
-
         /*
         Algorithm
 
@@ -62,6 +49,16 @@ public:
 
 
         */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    int largestSumAfterKNegations(vector<int> &nums, int k)
+    {
+
         sort(nums.begin(), nums.end()); // sorts in accending order
 
         int i = 0;

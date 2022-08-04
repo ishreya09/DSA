@@ -1,5 +1,13 @@
 // https://leetcode.com/problems/maximum-units-on-a-truck/
 
+        /*
+        Algorithm 
+        1. sort the 2D array with respect to units per box
+        2. Start taking the boxes and multiply it by its units until we reach the maximum 
+        number of boxes
+        */
+
+       
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -14,12 +22,6 @@ public:
     int maximumUnits(vector<vector<int>>& boxTypes, int truckSize) {
         // way to accept 2D vector (dynamic Array)
         
-        /*
-        Algorithm 
-        1. sort the 2D array with respect to units per box
-        2. Start taking the boxes and multiply it by its units until we reach the maximum 
-        number of boxes
-        */
         
  
         // uses Quick Sorting Technique

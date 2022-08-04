@@ -48,8 +48,14 @@ Constraints:
 
 */
 
-// Runtime: 8 ms, faster than 48.82% of C++ online submissions for Minimum Cost of Buying Candies With Discount.
-// Memory Usage: 10.8 MB, less than 81.02% of C++ online submissions for Minimum Cost of Buying Candies With Discount.
+        /*
+        Algorithm - see a pattern
+
+        1. Sort the cost in decending form
+        2. The first two elements sum will add up in cost and the
+        third element could be free
+        3. Therefore at an interval of 3, we can get a free candy , while we add up the rest
+        */
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -63,14 +69,6 @@ public:
     }
     int minimumCost(vector<int> &cost)
     {
-        /*
-        Algorithm - see a pattern
-
-        1. Sort the cost in decending form
-        2. The first two elements sum will add up in cost and the
-        third element could be free
-        3. Therefore at an interval of 3, we can get a free candy , while we add up the rest
-        */
         sort(cost.begin(), cost.end(), cmp);
         int c3 = 1; // count till 3
         int min = 0;

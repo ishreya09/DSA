@@ -33,15 +33,6 @@ Constraints:
 1 <= s.length <= 500
 s consists of lowercase English letters.
 */
-
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    vector<int> partitionLabels(string s)
-    {
         /*
 
         Hint :
@@ -61,6 +52,15 @@ public:
         6. We set the start to end +1 and and then again repeat the same while going ahead. 
 
         */
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    vector<int> partitionLabels(string s)
+    {
         int i=0;
         unordered_map <char,int> last;
         vector <int> ans;

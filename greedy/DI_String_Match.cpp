@@ -35,17 +35,8 @@ s[i] is either 'I' or 'D'.
 
 */
 
-// Runtime: 7 ms, faster than 71.83% of C++ online submissions for DI String Match.
-// Memory Usage: 8.9 MB, less than 67.77% of C++ online submissions for DI String Match.
 
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution
-{
-public:
-    vector<int> diStringMatch(string s){
-        /*
+/*
         Algorithm
 
         1. If string starts with I , we start the array with 0 and if it starts with D , then array starts with n
@@ -54,7 +45,15 @@ public:
         3. If further D is encounted, we decrementing by 1 from n. (here n)
         4. When the last letter is left, both the count reaches to the same number.
 
-        */
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution
+{
+public:
+    vector<int> diStringMatch(string s){
         int i, n, ind = 0;
         i = 0;
         n = s.length();
