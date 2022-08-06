@@ -77,7 +77,7 @@ public:
         for (int i=0; i <l/2+1;i++)
         {
             k=0;
-            while(k<l-i) // think of more memory efficient prg
+            while(k<(l-i)/2) // think of more memory efficient prg
             {
                 if (colors[i] != colors[l-k-1])
                 {   

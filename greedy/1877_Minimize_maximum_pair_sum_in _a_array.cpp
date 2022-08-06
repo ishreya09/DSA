@@ -70,6 +70,7 @@ public:
         }
 
         // find maximum value in the vector
+        // could have done and checked directly here instead of making a vector and checking for max
         int m = pair[0];
         for (int i = 1; i < n / 2; i++)
         {
@@ -91,3 +92,28 @@ int main(int argc, char const *argv[])
     cout<<a.minPairSum(num);
     return 0;
 }
+
+
+/*
+Alternate Better Method(Memory Efficient)
+
+class Solution{
+public: 
+    int minPairSum(vector<int> &nums)
+    {
+        int n= nums.size();
+        int max= nums[0]+ nums[n-1];
+        int a;
+        for (int i =0; i<n/2; i++){
+            a= nums[i]+ nums[n-i-1];
+            if (a>max){
+                max=a;
+            }
+        }
+        return max;
+    }
+
+}
+
+
+*/

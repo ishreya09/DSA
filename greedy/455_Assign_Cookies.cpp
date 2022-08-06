@@ -4,7 +4,8 @@ easy
 
 https://leetcode.com/problems/assign-cookies/
 
-Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie.
+Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at
+most one cookie.
 
 Each child i has a greed factor g[i], which is the minimum size of a cookie that the child will be content with;
 and each cookie j has a size s[j]. If s[j] >= g[i], we can assign the cookie j to the child i, and the child i will be content.
@@ -65,13 +66,6 @@ public:
         sort(g.begin(), g.end());
         sort(s.begin(), s.end());
 
-        for (int i=0;i<74;i++)
-            cout << g[i] << "\t";
-        cout << endl;
-
-        for (int i=0;i<s.size();i++)
-            cout << s[i] << "\t";
-        cout << endl;
 
         int j = 0, i = 0;
         int c = 0;
