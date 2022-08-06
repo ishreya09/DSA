@@ -1,3 +1,5 @@
+// not correct
+
 /*
 1011. Capacity To Ship Packages Within D Days
 Medium
@@ -59,59 +61,44 @@ Constraints:
 /*
 Algorithm
 
-(similar to array partition in three equal parts with a lil modification)
-1. The capacity will be greater than or equal to the maximum number present in the array. 
-Another thing is we can calculate sum and check for capacity accordingly by starting with maximum element or the avg.
-2. 
-3.
-
+1. take a capacity and keep on adding a[i] elements into the array
+2. pass this capacity into isPossible and return true or false accordingly.
 */
 
 #include<bits/stdc++.h>
 using namespace std;
 
+
 class Solution {
 public:
-    bool isPossible(vector<int>& arr, int n, int mid, int days){
-        int sum = 0;
-        int cur_day = 0;
-        for(int i=0;i<n;i++){
-            sum += arr[i];
-            if(sum > mid){
+    bool isPossible(vector<int>& arr, int capacity, int days){
+        int sum=0;
+        int curDay=0;
+        for (int i=0; i<arr.size(); i++){
+            sum+= arr[i];
+            if(sum>capacity){
                 sum = arr[i];
-                cur_day++;
+                curDay++;
             }
         }
-        
-        if(sum <= mid){
-            cur_day++;
+
+        if (sum<=capacity){ // if sum is less than capacity , it will take one more day
+            curDay++;
         }
-        
-        if(cur_day <= days)
+        if (curDay<=days){
             return true;
-        
+        }
         return false;
+
+
     }
     int shipWithinDays(vector<int>& arr, int days) {
-        int start = 0;
-        int end = 0;
-        int n=arr.size();
-        for(int i=0;i<n;i++){
-            end += arr[i]; //sum
-            if(arr[i]>start)
-                start = arr[i]; // max value of arr 
-        }
-        int ans = 0;
-        while(start <= end){
-            int mid = start + (end-start)/2; 
-            bool temp = isPossible(arr,n,mid,days);
-            if(temp){
-                ans = mid;
-                end = mid-1;
-            }else{
-                start = mid+1;
+        int capacity=0;
+        for (int i =0; i<arr.size();i++){
+            capacity += arr[i];
+            if (isPossible(arr,capacity,days)){
+                return capacity;
             }
-        }
-        return ans;
+        }   
     }
 };

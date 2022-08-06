@@ -37,19 +37,22 @@ s1, s2 only contain 'x' or 'y'.
 /*
 Algorithm -
 
-(something related to Two pointers as well)
 
-1. The strings can change every iteration and needs to be checked after every swapping -
-also check for length of s1 and s2- if its not same - return -1
-2. First, ignore all the already matched positions, they don't affect the answer at all.
-2. If the two strings are not reverse or in general - take i as start and j from the end and then swap
-3. If the two strings are exactly reversed, swap those positions taking i and j from start
-4. If x and y is the character to swap and rest are in positions, then its not possible to make it same,
-sO we return -1.
+
+    1.  Intuition -> xx _ It will give value 1 for making same 
+                     yy
+        
+        xy _ it will require 2 value
+        yx
+		
+		So make pairs of xx & yy it will require 1 swaps 
+		
+	2.	Now it may happen there is unpaired x & y -> if there is 1 unpaired x & y it will require 2 swaps
+    
+	3.	But if there is one unpaired x or 1 unpaired y , then return -1 , as there is no pairing 
 
 */
 
-// keep of hold 
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -57,50 +60,53 @@ using namespace std;
 class Solution
 {
 public:
-    int minimumSwap(string s1, string s2)
-    {
-        if (s1.length() != s2.length())
+    
+int minimumSwap(string s1, string s2) {
+        
+        int n1=s1.size();
+        int n2=s2.size();
+        
+        if(n1!=n2)
         {
             return -1;
         }
-        int swap = 0;
-        string rev;
-
-        while (s1 != s2)
+		
+        int countx=0;
+        int county=0;
+        
+        for(int i=0;i<n1;i++)
         {
-            rev = string(s1.rbegin(), s1.rend());
-            if (s2 != rev)
+            if(s1[i]!=s2[i])
             {
-                for (int i = 0, j = s2.length() - 1; i < s1.length(); i++, j--)
+                if(s1[i]=='x')
                 {
-                    if (s1[i] != s2[j])
-                    {
-                        // swap
-                        swap++;
-                        char temp = s1[i];
-                        s1[i] = s2[j];
-                        s2[j] = temp;
-                    }
+                    countx++;
+                }
+                else
+                {
+                    county++;
                 }
             }
-            else if (s2 == rev)
-            {
-                for (int i = 0, j = 0; i < s1.length(); i++, j++)
-                {
-                    if (s1[i] != s2[j])
-                    {
-                        // swap
-                        swap++;
-                        char temp = s1[i];
-                        s1[i] = s2[j];
-                        s2[j] = temp;
-                    }
-                }
-            }
-
-            
         }
+        
+        int ans=0;
+        
+        int remx=countx%2;
+        int remy=county%2;
+        
+        ans=countx/2 + county/2;
+        
+        if((remx+remy)==2)
+        {
+            ans+=2;
+        }
+        
+        if((remx+remy)==1)
+        {
+            return -1;
+        }
+        
+        return ans;
 
-        return swap;
     }
 };
