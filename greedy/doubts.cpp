@@ -30,9 +30,9 @@ Its kinda confusing to see struct like this. I was searching to sort map in term
 
 
 6. 
-for (auto& it : f){ // how is it working?
+for (auto it : f){ // how is it working?
     freq.push_back(it);
-    }
+}
 
 // freq is a vector and f is a map 
 

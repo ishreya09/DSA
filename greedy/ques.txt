@@ -25,6 +25,7 @@ Leetcode:
 455
 605
 1877
+
 763
 1605
 921
@@ -34,15 +35,16 @@ Leetcode:
 1753
 1833
 1247
-1011
 122
-
-
 1029
 621
 11
-767
 1855
+
+1011- Binary Search on Elements - not on Index
+767 - priority queue
+
+
 134
 55
 1465
