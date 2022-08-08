@@ -1,3 +1,5 @@
+// to do still
+
 /*
 134. Gas Station
 Medium
@@ -50,12 +52,79 @@ n == gas.length == cost.length
 /*
 Algorithm
 
-1. 
-2. 
-3.
+1. Find index for minimum cost and maximum fuel or maximum difference between the two.  (idx)
+2. We will return index idx if we can move clockwise through the circular path and come back as well - if true
+3. We will return -1 if we can't move clockwise through the path
+4. We can only move from one place to another until fuel is not <0 and after one round trip, 
+we have enough fuel to circle again
 
 */
 
 #include<bits/stdc++.h>
 using namespace std;
 
+
+class Solution {
+public:
+    int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
+        int idx=0;
+        for (int i=0; i<gas.size();i++){
+            if ((gas[i]-cost[i]) > (gas[idx]- cost[idx])){
+                cout << (gas[i]-cost[i]) <<endl;
+                cout<< (gas[idx]-cost[idx]) <<endl;
+                idx=i;
+            }
+        }
+        cout<< idx<<endl;
+        int fuel = gas[idx];
+        int i;
+        int c=0;
+        int flag=0;
+        if (idx==gas.size()-1){
+            c=1;
+            fuel = fuel + gas[0] - cost[gas.size()-1];
+        }
+        if (idx ==0){
+            // c=1;
+        }
+        for (i= (idx==gas.size()-1) ? 1 : idx+1 ; i<gas.size();i++){
+            fuel = fuel+ gas[i]- cost[i-1];
+            cout<< fuel <<endl;
+            
+            if (c==1 && i==idx && fuel>= gas[idx]){
+                cout<< "&&&"<<endl;
+                return idx;
+            }
+            else if (i==idx && c==1){
+                cout<< "&&&"<<endl;
+                return -1;
+            }
+            if (fuel < gas[i+1]-cost[i]){
+                cout<< "&&&"<<endl;
+                return -1;
+            }
+            if (c==0 && i == gas.size()-1){
+                fuel += gas[0] -cost[i] ;
+                i=0;
+                c=1;
+                // if idx=0
+                if (i==idx && fuel >= gas[idx]){
+                    return idx;
+                }
+                else if(i==idx){
+                    return -1;
+                }
+            }
+        }
+        // return idx;
+    }
+};
+
+int main(int argc, char const *argv[])
+{
+    vector<int> gas ={5,8,2,8};
+    vector<int> cost={6,5,6,6};
+    cout<<"ans="<< Solution().canCompleteCircuit(gas,cost)<< endl;
+
+    return 0;
+}

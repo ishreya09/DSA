@@ -40,16 +40,18 @@ Leetcode:
 621
 11
 1855
+55
+
+1881
+1465
+
+134 - todo
+1013 - one test case error
 
 1011- Binary Search on Elements - not on Index
 767 - priority queue
+857- priority queue
 
-
-134
-55
-1465
-1881
-857
 
 
 other easy greedy ques
@@ -59,17 +61,18 @@ other easy greedy ques
 976
 1323
 1403
-
 1736
 1903
-1974
 
+
+1974
 2027
 2160
 2224
 2259
 2335
+Maximum_no_of_meetings_gfg_easy
+Min_and_max_number_of_candies_gfg_easy
 
 
-1013 - one test case error
 
