@@ -56,12 +56,6 @@ class Solution
 public:
     string maximumTime(string time)
     {
-        if (time[0]=='?' && time[1]=='?' && time[3]=='?' && time[4]=='?'){
-            time[0]='2';
-            time[1]='3';
-            time[3]='5';
-            time[4]='9';
-        }
 
         if (time[0] == '?' && (time[1] <='3' || time[1]=='?'))
         {

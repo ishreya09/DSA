@@ -83,3 +83,31 @@ public:
         return s;
     }
 };
+
+/*
+// using stl library function string.substr()
+
+class Solution
+{
+public:
+    string largestOddNumber(string num)
+    {
+        int n = num.length();
+        if ((num[n - 1] - '0') % 2 != 0)
+            return num;
+
+        int i;
+        for (i = n - 1; i >= 0; i--)
+        {
+            if ((num[i] - '0') % 2 != 0)
+            {
+                // The substr() function takes the two parameters namely position and length.
+                return num.substr(0,i+1);
+            }
+        }
+
+        return num.substr (0,i+1);
+    }
+};
+
+*/
