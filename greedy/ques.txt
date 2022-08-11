@@ -23,8 +23,9 @@ Leetcode:
 860
 1005
 455
-605
-1877
+605 - easy
+
+1877 -medium
 
 763
 1605
@@ -45,7 +46,7 @@ Leetcode:
 1881
 1465
 
-134 - todo
+134 - time limit exceeded for 2-3 ques
 1013 - one test case error
 
 1011- Binary Search on Elements - not on Index

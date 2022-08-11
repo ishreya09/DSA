@@ -1,0 +1,6 @@
+Geeks for geeks easy ques
+
+Finding middle element in a linked list
+Detect Loop in linked list
+Nth node from end of linked list
+Reverse a linked list

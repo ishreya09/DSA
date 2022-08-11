@@ -10,7 +10,7 @@ segment is it stored?
 
 4. Can't we use substrings like str[0:3] ?
 
- 5. 
+5. 
  struct comp {
 	template <typename T>
 
@@ -28,13 +28,4 @@ segment is it stored?
 What does this code mean? 
 Its kinda confusing to see struct like this. I was searching to sort map in terms of their value
 
-
-6. 
-for (auto it : f){ // how is it working?
-    freq.push_back(it);
-}
-
-// freq is a vector and f is a map 
-
-7. What exactly is & in C++? It just seems to be different from C
 */
