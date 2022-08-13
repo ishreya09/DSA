@@ -1,6 +1,15 @@
 Geeks for geeks easy ques
 
 Finding middle element in a linked list
-Detect Loop in linked list
+Detect Loop in linked list -*
 Nth node from end of linked list
 Reverse a linked list
+Check if Linked List is Palindrome
+Remove duplicate element from sorted Linked List
+Add two numbers represented by linked lists
+Delete without head pointer-*
+Remove duplicate element from unsorted Linked List
+Given a linked list of 0s, 1s and 2s, sort it.
+Add 1 to a number represented as linked list
+Find Length of loop
+Pairwise swap elements of a linked list
