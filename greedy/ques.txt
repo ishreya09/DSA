@@ -64,8 +64,6 @@ other easy greedy ques
 1403
 1736
 1903
-
-
 1974
 2027
 2160
@@ -74,6 +72,8 @@ other easy greedy ques
 2335
 Maximum_no_of_meetings_gfg_easy
 Min_and_max_number_of_candies_gfg_easy
+
+
 
 
 
