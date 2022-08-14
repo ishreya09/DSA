@@ -1,3 +1,16 @@
+GFG Basic ques
+
+Linked List Insertion
+Count nodes of linked list
+Print Linked List elements
+Check If Circular Linked List
+Implement Stack using Linked List
+Identical Linked List
+Node at a given index in linked list
+Insert in Middle of Linked List
+Find the Sum of Last N nodes of the Linked List
+Linked List Length Even or Odd?
+
 Geeks for geeks easy ques
 
 Finding middle element in a linked list
@@ -13,3 +26,5 @@ Given a linked list of 0s, 1s and 2s, sort it.
 Add 1 to a number represented as linked list
 Find Length of loop
 Pairwise swap elements of a linked list
+Reverse a Doubly Linked List
+Insert in a Sorted List
