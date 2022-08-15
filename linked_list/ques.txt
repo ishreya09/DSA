@@ -10,6 +10,9 @@ Node at a given index in linked list
 Insert in Middle of Linked List
 Find the Sum of Last N nodes of the Linked List
 Linked List Length Even or Odd?
+Delete Alternate Nodes
+Delete node in Doubly Linked List
+
 
 Geeks for geeks easy ques
 
@@ -28,3 +31,6 @@ Find Length of loop
 Pairwise swap elements of a linked list
 Reverse a Doubly Linked List
 Insert in a Sorted List
+Sorted insert for circular linked list
+Remove Every Kth node
+Delete N nodes after M nodes of a linked list
