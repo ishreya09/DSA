@@ -34,3 +34,4 @@ Insert in a Sorted List
 Sorted insert for circular linked list
 Remove Every Kth node
 Delete N nodes after M nodes of a linked list
+Compare 2 Linked Lists
