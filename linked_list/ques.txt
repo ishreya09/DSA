@@ -35,3 +35,7 @@ Sorted insert for circular linked list
 Remove Every Kth node
 Delete N nodes after M nodes of a linked list
 Compare 2 Linked Lists
+Decimal Equivalent of Binary Linked List
+linked list of strings forms a palindrome
+Move all zeros to the front of the linked list
+Absolute List Sorting

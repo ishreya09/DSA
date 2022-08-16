@@ -43,6 +43,10 @@ Testcase 1: String consisting of nodes of first linked list is lexicographically
 /*
 Algorithm
 
+1. traverse through both linked list element by element
+2. If at any place, if first list's character is greater or smaller, we return accordingly
+3. If it contains equality, it returns at the end of the traversal (while loop is terminated)
+
 */
 
 #include<bits/stdc++.h>
