@@ -36,6 +36,16 @@ grid[i][j] is either 0 or 1.
 
 */
 
+/*
+Algorithm
+
+1. First flip the rows so that we get maximum binary number. SO if we have 0 as first element of each row, then flip 
+the matrix
+2. Now when it comes to columns, count 0s and 1s in a column and if count of 0s > count of 1's - then flip that particular
+column
+3. At last use left shift to find the binary numbers and return the ans.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

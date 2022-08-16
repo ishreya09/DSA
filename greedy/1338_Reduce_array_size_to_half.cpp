@@ -51,14 +51,15 @@ arr.length is even.
 /*
 Algorithm 
 
-1. Use map to count frequency and sort the map.
+1. Use map to count frequency and sort the map. (Better way to directly consider a 2D vector and sort it wrt to freq - 
+(keep frequency as 1st element))
 // to sort the map
 2. Make a vector of pair<int,int> type and add map elements into the vector and then sort the vector in 
 decending order in comparision with the pair's second value. This is one of the method to sort a map
 3. Now go on removing the values in the sorted vector made above - and go on counting
 4. Once the count reaches less than arr.size()/2 - stop removing.
 
-// The other method of sorting map is using sets
+// The other method of sorting map is using sets of pair
 */
 
 #include<bits/stdc++.h>

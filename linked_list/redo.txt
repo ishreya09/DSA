@@ -3,3 +3,4 @@ Easy GFG ques
 * Delete without head pointer
 #* Pairwise swap elements of a linked list
 * Decimal Equivalent of Binary Linked List
+* Absolute List Sorting
