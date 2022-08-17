@@ -33,11 +33,11 @@ Leetcode:
 1338
 1433
 1753
-
 1833
 1247
 122
 1029
+
 621
 11
 1855
@@ -46,7 +46,7 @@ Leetcode:
 1881
 1465
 
-134 - time limit exceeded for 2-3 ques
+134 - time limit exceeded for 2-3 testcases
 1013 - one test case error
 
 1011- Binary Search on Elements - not on Index
