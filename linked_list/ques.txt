@@ -12,6 +12,7 @@ Find the Sum of Last N nodes of the Linked List
 Linked List Length Even or Odd?
 Delete Alternate Nodes
 Delete node in Doubly Linked List
+Find n/k th node in Linked list
 
 
 Geeks for geeks easy ques
@@ -39,3 +40,7 @@ Decimal Equivalent of Binary Linked List
 linked list of strings forms a palindrome
 Move all zeros to the front of the linked list
 Absolute List Sorting
+Split Singly Linked List Alternatingly
+Move Last Element to Front of a Linked List
+Segregate even and odd nodes in a Link List
+Arrange Consonants and Vowels
