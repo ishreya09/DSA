@@ -44,3 +44,6 @@ Split Singly Linked List Alternatingly
 Move Last Element to Front of a Linked List
 Segregate even and odd nodes in a Link List
 Arrange Consonants and Vowels
+Merge Lists Alternatingly
+Linked List Matrix
+Rearrange linked list in-place
