@@ -68,8 +68,7 @@ public:
 
         sort(horizontalCuts.begin(), horizontalCuts.end());
         sort(verticalCuts.begin(), verticalCuts.end());
-        sort(horizontalCuts.begin(), horizontalCuts.end());
-        sort(verticalCuts.begin(), verticalCuts.end());
+
 
         long long int maxh = horizontalCuts[0];
         long long int maxv = verticalCuts[0];
