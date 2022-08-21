@@ -47,3 +47,6 @@ Arrange Consonants and Vowels
 Merge Lists Alternatingly
 Linked List Matrix
 Rearrange linked list in-place
+Modify Linked List-1
+Merge 2 sorted linked list in reverse order
+Linked List that is Sorted Alternatingly - testcase error

@@ -50,6 +50,25 @@ Constraints:
 /*
 Algorithm
 
+1. find the middle pointer and keep a check on if the list is having length even or odd with help of slow, fast 
+and prev pointers.
+(
+    TO CHECK IF LIST IS EVEN OR ODD
+        1. GO with the same algorithm of fast and slow pointer where fast pointer moves 2 places and 
+        slow pointer moves one place at a given time.
+        2. iF the list is even, the fast pointer will always end up as NULL and if it's odd, 
+        then fast->next will be NULL
+)
+2. Make another pointer temp and check if the list is having even elements or odd
+If number of elements is even, set temp as slow pointer and make prev->next = NULL
+Otherwise set temp to slow->next and set slow->next = NULL
+
+3. reverse temp and store head in another pointer t, and then traverse the linked list again by setting fast = root again
+and do the substraction which is required
+
+4. reverse the temp again using pointer t and then if prev->next was set to null, then set prev->next == NULL 
+else slow->next == NULL
+
 */
 
 #include<bits/stdc++.h>
@@ -96,43 +115,53 @@ struct Node* reverse(struct Node *head)
 struct Node* modifyTheList(struct Node *root)
 {
     // your code goes here
+    if (root==NULL || root->next ==NULL){
+        return root;
+    }
+    
     Node *head= root;
     Node *fast = root;
     Node *slow =root;
+    Node *prev =root;
     
     while(fast!= NULL && fast->next!=NULL){
+        prev=slow;
         slow= slow->next;
-        fast = fast->next->next;// (fast->next != NULL) ? fast->next->next : fast->next;
+        fast = fast->next->next;
     }
-    // cout << slow->data<< endl;
+    
     bool even=false;
     if (fast == NULL){
         even = true;
     }
-    
     Node *temp;
-    temp = slow->next;
-    slow->next = NULL;
-
     
-    temp = reverse (temp); // reversing from middle
-    Node *t = temp;
-    fast = head;
-    // printList(fast);
-    Node *c;
-    int d;
-    while (temp!= NULL && fast!=NULL && fast->next!= NULL){
-        d= temp->data;
-        fast->data = fast->data - temp->data;
-        temp->data= d;
-        // cout << d <<"\t"<< fast->data<< endl;
-        temp= temp->next;
-        fast= fast->next;
+    if(even){
+        temp= slow;
+        prev->next= NULL;
     }
-    // printList(t);
-    temp = reverse (t);
-    // printList(t);
-    fast->next = temp;
+    else{
+        temp = slow->next;
+        slow->next=NULL;
+    }
+    temp = reverse (temp);
+    Node *t = temp;
+    
+    fast = root;
+    while (temp!= NULL && fast!= NULL ){
+        fast->data = fast->data- temp->data;
+        
+        fast= fast->next;
+        temp=temp->next;
+    }
+    t= reverse (t);
+    
+    if(prev->next == NULL ){
+        prev->next = t; 
+    }
+    else if(slow->next ==NULL){
+        slow->next =t;
+    }
     
     
     return root;
