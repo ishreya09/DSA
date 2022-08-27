@@ -32,6 +32,19 @@ Constraints:
 /*
 Algorithm
 
+1. Create a new node temp and set the data and set next and prev pointers to NULL
+2. if head is NULL, we insert at head
+3. If head is not null, we check if head's data > data passed
+If true:
+	then we insert at head by making the head->prev point to temp and temp->next to head
+	and then storing temp as head.
+If false:
+	then we traverse to the list using start pointer and traverse till the start->next->data<x
+	and then stop there
+	We get the prev node now, we changetemp->next to start->next and start->next = temp and temp ->prev = start 
+	then we change start to temp->next and set start->prev= temp. Do the last step only after checking
+	if start != NULL
+
 */
 
 #include<bits/stdc++.h>
@@ -41,13 +54,6 @@ struct Node {
     int data;
     struct Node* next;
     struct Node* prev;
-
-
-    Node(int x){
-        data =x;
-        next = NULL;
-        prev= NULL;
-    }
 };
 
 // function should insert a new node in sorted way in

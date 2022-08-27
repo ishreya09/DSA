@@ -49,4 +49,9 @@ Linked List Matrix
 Rearrange linked list in-place
 Modify Linked List-1
 Merge 2 sorted linked list in reverse order
-Linked List that is Sorted Alternatingly - testcase error
+
+Linked List that is Sorted Alternatingly - ****testcase error
+
+Split a Circular Linked List into two halves
+Intersection of two sorted Linked lists
+Rotate doubly Linked List
