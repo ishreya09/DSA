@@ -37,6 +37,11 @@ Constraints:
 /*
 Algorithm
 
+1. if head= NULL, its surely not circular linked list
+2. Create a temp pointer pointing to head->next and if it is not equal to NULL and if its not equal to head, we traverse through 
+the linked list
+3. return if temp==head
+
 */
 
 #include<bits/stdc++.h>

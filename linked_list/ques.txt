@@ -55,3 +55,14 @@ Linked List that is Sorted Alternatingly - ****testcase error
 Split a Circular Linked List into two halves
 Intersection of two sorted Linked lists
 Rotate doubly Linked List
+
+Leetcode Easy ques
+141. Linked List Cycle
+203. Remove Linked List Elements
+
+
+Leetcode Medium ques
+2. Add 2 Numbers
+19. Remove Nth Node From End of List
+24. Swap Nodes in Pairs
+61. Rotate List - testcases error
