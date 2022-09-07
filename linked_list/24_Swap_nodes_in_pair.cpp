@@ -34,6 +34,13 @@ The number of nodes in the list is in the range [0, 100].
 /*
 Algorithm
 
+1. If head contains NULL or only one node- simply return the head
+2. If 1st point is not true, then define prev and current pointers - and make the current's next to point towards 
+prev. Also define a next pointer which is pointing to current's next. 
+3. if next is not null or next is not the last node, then point prev's next to next's next pointers and change prev to next
+and cur to next->next.
+4. If next is null or next is the last node, change prev->next = next and thus swaping it pairwise.
+
 */
 
 #include<bits/stdc++.h>
@@ -49,7 +56,7 @@ struct ListNode {
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
-        if (head==NULL && head->next==NULL){
+        if (head==NULL || head->next==NULL){
             return head;
         }
         ListNode *prev=head;

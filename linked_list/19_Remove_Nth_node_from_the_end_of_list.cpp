@@ -34,7 +34,12 @@ Follow up: Could you do this in one pass?
 
 /*
 Algorithm
-
+1. take 2 pointers - temp and rem,
+make temp traverse till n nodes while rem points to head node.
+2. check if n==0 and temp->next==NULL - if true - it means we need to delete the head node
+3. Now make rem and temp traverse through the list till temp->next==NULL,
+once it is null- rem points to the previous node of the nth node from the end of the linked list
+4. Now delete the rem->next pointer and set rem->next to rem->next->next 
 
 */
 #include<bits/stdc++.h>

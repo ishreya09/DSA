@@ -4,3 +4,5 @@ Easy GFG ques
 #* Pairwise swap elements of a linked list
 * Decimal Equivalent of Binary Linked List
 * Absolute List Sorting
+#* 206. Reverse Linked List - recursive solution
+

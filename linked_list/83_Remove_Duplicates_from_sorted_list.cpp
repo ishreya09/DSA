@@ -32,6 +32,10 @@ The list is guaranteed to be sorted in ascending order.
 /*
 Algorithm
 
+1. Create a map to see the frequency of the members
+2. If the frequency of a number is greater than 1, then delete that particuar node.
+3. Maintain a prev and next(here temp) pointers so as to remove the node from the linked list
+
 */
 
 #include<bits/stdc++.h>

@@ -33,6 +33,15 @@ The number of nodes in the list is in the range [0, 104].
 /*
 Algorithm
 
+1. Keep a track of cur and prev pointers while traversing through the linked list.
+Keep a note that prev pointer doesn't get changed when we delete the node of the list.
+We also will traverse the whole list, instead of just looping till the first element that has 
+same value as x.
+2. If the element is present at the head- we need to move the cur to cur->next
+and point head to cur and delete the previous pointer
+3. If the element is present in middle or in between, make prev->next point to cur->next and delete cur and 
+make cur point to prev->next.
+
 */
 
 #include<bits/stdc++.h>
