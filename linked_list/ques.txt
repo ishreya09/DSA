@@ -62,6 +62,9 @@ Leetcode Easy ques
 83. Remove Duplicates from Sorted List
 876. Middle of the Linked List
 206. Reverse Linked List
+21. Merge Two Sorted Lists 
+1290. Convert Binary Number in a Linked List to Integer
+
 
 Leetcode Medium ques
 19. Remove Nth Node From End of List
@@ -69,6 +72,8 @@ Leetcode Medium ques
 237. Delete Node in a Linked List
 234. Palindrome Linked List
 86. Partition List
+2. Add 2 Numbers
+2095. Delete the Middle Node of a Linked list
+
 
 61. Rotate List - testcases error
-2. Add 2 Numbers

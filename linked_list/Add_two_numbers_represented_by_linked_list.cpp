@@ -48,7 +48,8 @@ Constraints:
 Algorithm
 
 1. Write the logic of reverse function using prev and next pointers and reverse the linked list of first and second numbers.
-2. Once both numbers linked list are reversed, start adding. If addition is greater than 9, store the rest of the number in carry.
+2. Once both numbers linked list are reversed, start adding. If addition is greater than 9, store the rest of 
+the number in carry.
 3. Check for the conditions such as if first number reaches null first/ second number reaching null, etc
 4. If at the end, carry is not equal to zero, then push carry as well into the linked list.
 
