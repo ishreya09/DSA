@@ -1,0 +1,11 @@
+Gfg Easy
+
+Count Pairs whose sum is equal to X
+Merge Sort of Linked List
+Intersection of Two linked list
+Multiply two linked list
+Union of 2 Linked list
+Linked List in Zig-Zag fashion
+XOR Linked List
+Linked List that is Sorted Alternatingly - ****testcase error
+Insert in Sorted way in a Sorted DLL - **segmentation fault

@@ -90,3 +90,34 @@ Node* sortedInsert(Node * head, int x)
 	}
 	return head;
 }
+
+
+//Return the head after insertion
+Node* sortedInsert1(Node * head, int x)
+{
+	// Code here
+	// initialize a new node temp
+	Node *temp;
+	temp->data = x;
+	temp->prev=temp->next= NULL;
+	
+	if(head== NULL){
+	    head= temp;
+	}
+	else if (head->data > x ){ // inserion at head
+	    temp->next = head;
+	    head->prev= temp;
+	    head= temp;
+	}
+	else{
+	    Node *start =head;
+	    while(start!= NULL && start->next->data < x){
+	        start = start->next;
+	    }
+	    temp->prev = start;
+	    temp->next = start->next;
+	    start->next = temp;
+	    temp->next->prev=temp;
+	}
+	return head;
+}

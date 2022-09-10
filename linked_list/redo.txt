@@ -5,4 +5,5 @@ Easy GFG ques
 * Decimal Equivalent of Binary Linked List
 * Absolute List Sorting
 #* 206. Reverse Linked List - recursive solution
+* 160. Intersection of Two Linked Lists
 

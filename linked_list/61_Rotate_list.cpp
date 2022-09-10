@@ -1,7 +1,4 @@
 /*
-// NOT WORKING -153/231 testcases passed
-
-
 61. Rotate List
 Medium
 
@@ -32,6 +29,14 @@ The number of nodes in the list is in the range [0, 500].
 /*
 Algorithm
 
+1. Take the last node and move to the front, and repeat it k times.
+
+
+Alternate:
+
+1. Find the length and simentaneously make the last node point to head node, making a circular list.
+2. Find the kth node from the end of the list and then make the head and make it's prev node as NULL.
+
 */
 
 #include<bits/stdc++.h>
@@ -45,35 +50,34 @@ struct ListNode {
 
 class Solution {
 public:
+    int len(ListNode *head){
+        if (head==NULL){
+            return 0;
+        }
+        else{
+            return 1+ len(head->next);
+        }
+    }
     ListNode* rotateRight(ListNode* head, int k) {
-        if (head==NULL || k==0 || head->next==NULL ){
+        if (head==NULL || head->next==NULL || k==0){
             return head;
         }
-
         ListNode *temp=head;
-        ListNode *rot= head;
-        while(k-- && temp->next!=NULL){
-            temp=temp->next;
-        }
-        if(k!=0 && temp->next==NULL){
-            // push last node to first
-            while(rot->next->next!=NULL){
-                rot=rot->next;
+        k= k%len(head);
+        while (k!=0){ // bad time complexity
+            temp=head;
+            while(temp->next !=NULL){
+                if (temp->next->next==NULL){
+                    temp->next->next =head;
+                    head= temp->next;
+                    temp->next=NULL; 
+                    k--; // one rotation done
+                }
+                else{
+                    temp=temp->next;
+                }
             }
-            rot->next=NULL;
-            temp->next=head;
-            head= temp;
-            return head;
         }
-        while(temp->next!=NULL){
-            rot=rot->next; // rot will end up on the prev node since we are 
-            // stoping at temp->next ==NULL
-            temp=temp->next;
-        }
-        
-        temp->next=head;
-        head=rot->next;
-        rot->next=NULL;
         return head;
         
     }

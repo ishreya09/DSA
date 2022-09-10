@@ -50,11 +50,14 @@ Rearrange linked list in-place
 Modify Linked List-1
 Merge 2 sorted linked list in reverse order
 
-Linked List that is Sorted Alternatingly - ****testcase error
 
 Split a Circular Linked List into two halves
 Intersection of two sorted Linked lists
 Rotate doubly Linked List
+Deletion and Reverse in Linked List
+
+Linked List that is Sorted Alternatingly - ****testcase error
+Insert in Sorted way in a Sorted DLL - **segmentation fault
 
 Leetcode Easy ques
 141. Linked List Cycle
@@ -64,6 +67,7 @@ Leetcode Easy ques
 206. Reverse Linked List
 21. Merge Two Sorted Lists 
 1290. Convert Binary Number in a Linked List to Integer
+160. Intersection of Two Linked Lists
 
 
 Leetcode Medium ques
@@ -74,6 +78,8 @@ Leetcode Medium ques
 86. Partition List
 2. Add 2 Numbers
 2095. Delete the Middle Node of a Linked list
+61. Rotate List 
+
+Delete Duplicates II - Wrong Answer
 
 
-61. Rotate List - testcases error

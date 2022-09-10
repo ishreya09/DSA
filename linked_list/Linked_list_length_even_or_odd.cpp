@@ -41,6 +41,12 @@ Testcase 2: The length of linked list is 6 which is even.
 /*
 Algorithm
 
+1. traverse the list and count
+2. return count %2 
+
+Another method :
+1. Check using fast pointer 
+2. if fast ==NULL, then it will be odd length and if fast->next==NULL then it will be of even length
 */
 
 #include<bits/stdc++.h>
