@@ -1,0 +1,27 @@
+Leetcode Questions
+
+Easy
+1337. The K Weakest Rows in a Matrix
+506. Relative Ranks
+1046. Last Stone Weight
+1464. Maximum Product of Two Elements in an Array
+
+2357. Make Array Zero by Subtracting Equal Amounts- TIME LIMIT EXCEEDED
+2099. Find Subsequence of Length K With the Largest Sum - TESTCASE ERROR - NOT ABLE TO MAINTAIN THE ORDER OF ELEMENTS
+
+    506
+    451 
+    378
+    215
+347
+767
+658
+621
+692
+    1046
+1338
+1094
+1054
+973
+1696
+1753
