@@ -39,13 +39,24 @@ Algorithm
 #include<bits/stdc++.h>
 using namespace std;
 
+// is there any way where we cannot create a map and directly store
+
 class Solution {
 public:
     vector<int> topKFrequent(vector<int>& nums, int k) {
-        sort(nums.begin(),nums.end());
-        priority_queue<pair<int,int>> p;
-        for (int i=0;i<nums.size();i++){
-            
+        map<int,int> val;
+        for(int i=0; i<nums.size();i++){
+            val[nums[i]]++;
         }
+        priority_queue<pair<int,int>> p;
+        for(auto i=val.begin();i!=val.end();i++){
+            p.push(make_pair(i->second,i->first));
+        }
+        vector<int> ans;
+        while (k-- && !p.empty()){
+            ans.push_back(p.top().second);
+            p.pop();
+        }
+        return ans;
     }
 };

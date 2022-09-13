@@ -1,0 +1,6 @@
+* Represents number of times getting stuck in that problem
+# represents questions which I solved and I really liked them
+
+Leetcode
+
+*# 767. Reorganise String
