@@ -24,3 +24,9 @@ Easy
 1753
 
 1696 - Dynamic Programming
+
+
+gfg Questions
+
+1. Cereals Box 
+2. C++ STL Priority Queue 
