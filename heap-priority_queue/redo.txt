@@ -5,3 +5,7 @@ Leetcode
 
 *# 767. Reorganise String
 # Distant Barcodes
+
+gfg
+
+*# Minimum increment/decrement to make array non-Increasing

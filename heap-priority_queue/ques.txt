@@ -28,5 +28,13 @@ Easy
 
 gfg Questions
 
+Easy
 1. Cereals Box 
 2. C++ STL Priority Queue 
+
+Medium
+3. Minimum increment/decrement to make array non-Increasing
+4. Top k numbers in a stream
+
+Codechef
+1. Save Konoha - https://www.codechef.com/problems/SAVKONO

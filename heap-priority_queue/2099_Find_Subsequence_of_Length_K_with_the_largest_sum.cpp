@@ -45,6 +45,9 @@ Constraints:
 
 /*
 Algorithm 
+1. make a pq using pairs containing number and their index. 
+2. store the first k pairs in a vector storing index as first element
+3. sort the index now and store it in a vector of integers and return this vector
 
 */
 
@@ -55,14 +58,23 @@ class Solution {
 public:
     vector<int> maxSubsequence(vector<int>& nums, int k) {
         vector<int> ans;
-        priority_queue<int> p;
+        priority_queue<pair<int,int>> p;
+        
         for (int i=0;i<nums.size();i++){
-            p.push(nums[i]);
+            p.push(make_pair(nums[i],i));
         }
+        vector<pair<int,int>> t;
         while(k--){
-            ans.push_back(p.top());
+            auto i=p.top();
+            t.push_back(make_pair(i.second,i.first));
             p.pop();
         }
+        sort(t.begin(),t.end());
+        
+        for (int i=0;i<t.size();i++){
+            ans.push_back(t[i].second);
+        }
+        
         return ans;
     }
 };
