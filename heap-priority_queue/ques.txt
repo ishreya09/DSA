@@ -4,8 +4,17 @@ Easy
 1337. The K Weakest Rows in a Matrix
 1464. Maximum Product of Two Elements in an Array
 
+2099. Find Subsequence of Length K With the Largest Sum
+2231. Largest Number After Digit Swaps by Parity
+
 2357. Make Array Zero by Subtracting Equal Amounts- TIME LIMIT EXCEEDED
-2099. Find Subsequence of Length K With the Largest Sum - TESTCASE ERROR - NOT ABLE TO MAINTAIN THE ORDER OF ELEMENTS
+
+Medium
+1962. Remove Stones to Minimize the Total
+1424. Diagonal Traverse II
+
+373. Find K Pairs with Smallest Sums - TIME LIMIT EXCEEDED
+
 
 506
 451 

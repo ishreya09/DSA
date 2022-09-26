@@ -1,5 +1,4 @@
 /*
-TIME LIMIT EXCEEDED
 2357. Make Array Zero by Subtracting Equal Amounts
 Easy
 
@@ -38,6 +37,11 @@ Constraints:
 /*
 Algorithm 
 
+1. Make a dynamic pq which keeps track of the elements in the array.
+2. the loop will break when pq becomes empty, i.e. all elements are zero
+3. before adding new array elements in new iteration, make sure that pq is empty.
+4. count only when pq is not empty and go on decrementing x from the array elements
+
 */
 
 #include<bits/stdc++.h>
@@ -47,28 +51,34 @@ class Solution {
 public:
     int minimumOperations(vector<int>& nums) {
         priority_queue<int,vector<int>,greater<int>> a;
-        //Assign nums to pq
-        for(int i=0;i<nums.size();i++){
-            a.push(nums[i]);
-        }
         int c=0;
-        while(a.top()==0){
-            a.pop();
-        }
-        while(!a.empty()){
-            if (a.top()==0)
+        do{
+            while (!a.empty()){
                 a.pop();
-            else{
+            }
+            for(int i=0;i<nums.size();i++){
+                if (nums[i]!=0)
+                    a.push(nums[i]);
+            }
+            
+            int x=0;
+            if(!a.empty()){
+                x=a.top();
                 c++;
-                int x= a.top();
-                a.pop();
-                int y = a.top();
-                a.pop();
-                if (y-x!=0){
-                    a.push(y-x);
+            }
+            else{
+                break;
+            }
+            for (int i=0; i<nums.size();i++){
+                if (nums[i]>0){
+                    nums[i]= nums[i]-x>0 ? nums[i]-x : 0;
                 }
             }
-        }
+            
+            
+        }while (!a.empty());
+        
         return c;
+        
     }
 };
