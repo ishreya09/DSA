@@ -7,12 +7,14 @@ Easy
 2099. Find Subsequence of Length K With the Largest Sum
 2231. Largest Number After Digit Swaps by Parity
 
-2357. Make Array Zero by Subtracting Equal Amounts- TIME LIMIT EXCEEDED
 
 Medium
 1962. Remove Stones to Minimize the Total
 1424. Diagonal Traverse II
+33. Search in Rotated Sorted Array
 
+2357. Make Array Zero by Subtracting Equal Amounts- TIME LIMIT EXCEEDED
+2342. Max Sum of a Pair With Equal Sum of Digits - TIME LIMIT EXCEEDED
 373. Find K Pairs with Smallest Sums - TIME LIMIT EXCEEDED
 
 
@@ -44,6 +46,7 @@ Easy
 Medium
 3. Minimum increment/decrement to make array non-Increasing
 4. Top k numbers in a stream
+5. K-th Largest Sum Contiguous Subarray
 
 Codechef
 1. Save Konoha - https://www.codechef.com/problems/SAVKONO

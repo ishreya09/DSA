@@ -5,6 +5,8 @@ Leetcode
 
 *# 767. Reorganise String
 # Distant Barcodes
+*# 1792. Maximum Average Pass Ratio
+
 
 gfg
 
