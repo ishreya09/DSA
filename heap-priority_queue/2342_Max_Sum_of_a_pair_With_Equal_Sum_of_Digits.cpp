@@ -1,5 +1,4 @@
 /*
-TIME LIMIT EXCEEDED
 2342. Max Sum of a Pair With Equal Sum of Digits
 Medium
 
@@ -36,9 +35,12 @@ Constraints:
 /*
 Algorithm 
 
-1. Make a pq to store the pairs with same sum of digits
-2. To find the digit pairs we add using O(n2) technique
-3. 
+1. Make a pq p to store the numbers on the basis of sum of digits. If the sum of digit is same- then we give max number 
+more priority
+2. We take out the first 2 elements of the pq p and if they both are equal - we push the sum in another max heap pq sums.
+We pop both the elements and we also now pop any more numbers with same sod. 
+3. If they both are not equal - we pop the first element - but not the second and continue the loop
+4. We check if sums pq is empty or it - if its empty - then return -1 otherwise return the top element.
 
 */
 
@@ -53,28 +55,52 @@ int sod(int n){
 }
 
 struct Compare {
-    bool operator() (pair<int, int> a, pair<int, int> b) {
-        return a.first+a.second < b.first+b.second;
+    bool operator() (int a, int b) {
+        if (sod(a)==sod(b)){
+            return a<=b;
+        }
+        else {
+            return sod(a)<sod(b);
+        }
+        
     }
 };
 
 class Solution {
 public:
     int maximumSum(vector<int>& nums) {
-        priority_queue<pair<int,int>,vector<pair<int,int>>, Compare> p;
-        for (int i=0; i<nums.size();i++){
-            for(int j=i+1; j<nums.size();j++){
-                int x= sod(nums[i]);
-                int y= sod(nums[j]);
-                if(x==y){
-                    p.push(make_pair(nums[i],nums[j]));
+        priority_queue<int,vector<int>, Compare> p(begin(nums),end(nums));
+        priority_queue<int> sums;
+        
+        while (!p.empty()){
+            int a=p.top();
+            p.pop();
+            int b=0;
+            if (!p.empty())
+                b= p.top();
+            else{
+                break;
+            }
+            if (sod(a)!=sod(b)){
+            
+                continue;
+            }
+            else{
+                p.pop();
+                sums.push(a+b);
+                while ( !p.empty() && sod(p.top())==sod(a)){
+                    p.pop();
                 }
-                
             }
         }
-        if (p.empty()){
-            return -1;
+        int ans;
+        if (sums.empty()){
+            ans=-1;
         }
-        return p.top().first+p.top().second;
+        else{
+            ans= sums.top();
+        }
+        return ans;
+        
     }
 };

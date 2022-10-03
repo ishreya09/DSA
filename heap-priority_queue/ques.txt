@@ -3,7 +3,6 @@ Leetcode Questions
 Easy
 1337. The K Weakest Rows in a Matrix
 1464. Maximum Product of Two Elements in an Array
-
 2099. Find Subsequence of Length K With the Largest Sum
 2231. Largest Number After Digit Swaps by Parity
 
@@ -18,13 +17,18 @@ Medium
 1705. Maximum Number of Eaten Apples
 2233. Maximum Product After K Increments
 1834. Single-Threaded CPU
+1801. Number of Orders in the Backlog 
+1942. The Number of the Smallest Unoccupied Chair
+1882. Process Tasks Using Servers
+1845. Seat Reservation Manager
+373. Find K Pairs with Smallest Sums
+2357. Make Array Zero by Subtracting Equal Amounts
+2342. Max Sum of a Pair With Equal Sum of Digits 
 
-1801. Number of Orders in the Backlog - logical ERROR
-2406. Divide Intervals Into Minimum Number of Groups - TIME LIMIT EXCEEDED
-2357. Make Array Zero by Subtracting Equal Amounts- TIME LIMIT EXCEEDED
-2342. Max Sum of a Pair With Equal Sum of Digits - TIME LIMIT EXCEEDED
-373. Find K Pairs with Smallest Sums - TIME LIMIT EXCEEDED
+Hard
+2344. Minimum Deletions to Make Array Divisible
 
+Solved : 
 
 506
 451 
@@ -42,7 +46,6 @@ Medium
 973
 1753
 
-1696 - Dynamic Programming
 
 
 gfg Questions
@@ -58,3 +61,20 @@ Medium
 
 Codechef
 1. Save Konoha - https://www.codechef.com/problems/SAVKONO
+
+ERROR : 
+
+2406. Divide Intervals Into Minimum Number of Groups - TIME LIMIT EXCEEDED
+1353. Maximum Number of Events That Can Be Attended - LOGICAL ERROR 
+Not able to handle the test cases with large Intervals
+eg - 
+[[1,5],[1,5],[1,5],[2,3],[2,3]]
+out- 5
+getting - 4
+https://leetcode.com/submissions/detail/812584122/
+1882. Process Tasks Using Servers - Solved but very inefficient
+857 - not understanding the criteria to sort the workers
+
+
+1696 - Dynamic Programming
+1686 - Dynamic Programming

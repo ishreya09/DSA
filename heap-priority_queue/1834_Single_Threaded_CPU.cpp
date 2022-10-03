@@ -57,9 +57,12 @@ tasks.length == n
 /*
 Algorithm 
 
-1. 
-2. 
-3. 
+1. push index at the end of the vector and then sort the vector wrt to the enque time
+2. Make a priority queue pq of pair having burst time and index and define startTime as tasks[0][0]
+3. Go on adding the tasks having time <= startTime and process the shortest task and add the burst time to the startTime
+4. It can happen that after a time - startTime would be less than whats there in the vector for tasks - so if pq is empty 
+It is important that we initialize start time again to the new start time and resume the above steps.
+5. Push back the index(2nd element of the pair) and return it back in the end.
 
 */
 
