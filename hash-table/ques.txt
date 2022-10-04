@@ -1,0 +1,9 @@
+Leetcode Questions
+
+Easy
+
+1512. Number of Good Pairs
+771. Jewels and Stones
+575. Distribute Candies
+2325. Decode the Message
+1365. How Many Numbers Are Smaller Than the Current Number

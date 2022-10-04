@@ -1,0 +1,20 @@
+std::sort(): The sort() function is widely used by the programmers. 
+The sort() function allows you to sort the given array or vector. 
+It takes the name and size as the parameter in the array's case and the 
+starting point and the endpoint in the case of the vector. The sort() 
+function is a hybrid of heap sort and quicksort.
+
+std::swap(): The swap() function is another STL algorithm template. 
+The swap() function lets you swap two entities. It accepts the two 
+entities that are to be swapped as their parameters. This function 
+saves you from hard work.
+
+std::reverse(): The reverse() function is used to return the elements 
+in an order which will be the reverse of the original order. This function 
+accepts two parameters, the iterators storing the memory addresses of the first 
+and the last entity. The first iterator will point to the first entity from 
+which the elements need to be reversed, and the last iterator will point to the 
+last element up to which the values need to be reversed.    
+
+Other popular algorithm templates used are: std:: min(), std::max(), std::swap(), std::rotate(), 
+std::reverse(), std::min_element(), std::max_element(), std:: binary_search().
