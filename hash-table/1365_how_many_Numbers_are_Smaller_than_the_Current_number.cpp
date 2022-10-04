@@ -41,9 +41,9 @@ Constraints:
 /*
 Algorithm
 
-1. 
-2. 
-3.
+1. Create a custom node structure so that values of the map is defaulted to -1 instead of zero
+2. Sort and store in different array and start taking cumulative sums of the elements
+3. Traverse through original array and use the map to get the numbers less than it.
 
 */
 

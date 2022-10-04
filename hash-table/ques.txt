@@ -1,3 +1,5 @@
+Hash Map Questions
+
 Leetcode Questions
 
 Easy
@@ -7,3 +9,12 @@ Easy
 575. Distribute Candies
 2325. Decode the Message
 1365. How Many Numbers Are Smaller Than the Current Number
+594. Longest Harmonious Subsequence
+1832. Check if the Sentence Is Pangram
+2418. Sort the People
+804. Unique Morse Code Words
+599. Minimum Index Sum of Two Lists
+2367. Number of Arithmetic Triplets
+1436. Destination City
+2006. Count Number of Pairs With Absolute Difference K
+1684. Count the Number of Consistent Strings
