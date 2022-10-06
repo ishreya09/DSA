@@ -18,3 +18,9 @@ Easy
 1436. Destination City
 2006. Count Number of Pairs With Absolute Difference K
 1684. Count the Number of Consistent Strings
+2103. Rings and Rods
+1370. Increasing Decreasing String
+1941. Check if All Characters Have Equal Number of Occurrences
+2351. First Letter to Appear Twice
+2341. Maximum Number of Pairs in Array
+961. N-Repeated Element in Size 2N Array
