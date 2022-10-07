@@ -31,3 +31,11 @@ Easy
 1742. Maximum Number of Balls in a Box
 2154. Keep Multiplying Found Values by Two
 2283. Check if Number Has Equal Digit Count and Digit Value
+2032. Two Out of Three
+1935. Maximum Number of Words You Can Type
+496. Next Greater Element I
+1207. Unique Number of Occurrences
+2399. Check Distances Between Same Letters
+1876. Substrings of Size Three with Distinct Characters
+349. Intersection of Two Arrays
+2085. Count Common Words With One Occurrence
