@@ -46,9 +46,9 @@ Follow up: Could you find an O(nums1.length + nums2.length) solution?
 /*
 Algorithm
 
-1. 
-2. 
-3.
+1. make a map for num2 for having index of values in num2
+2. traverse through num1 and return the greatest next number using map's index by traversing in the array 
+from idx to nums2.size()-1
 
 */
 
