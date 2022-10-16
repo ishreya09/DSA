@@ -9,9 +9,8 @@ Two Pointer
 /*
 Algorithm
 
-1. Define k to check whose chance it is and then 
-2. 
-3.
+1. Define k to check whose chance it is and then select the maximum from either side of the array using 2 pointers
+and decrement or increment from the respective side accordingly
 
 */
 

@@ -1,0 +1,14 @@
+Codeforces Questions
+
+Two Pointer 
+381A  - https://codeforces.com/problemset/problem/381/A
+1462A - https://codeforces.com/problemset/problem/1462/A
+1746A - https://codeforces.com/contest/1746/problem/A
+1746B - https://codeforces.com/contest/1746/problem/B - *
+1646B - https://codeforces.com/problemset/problem/1646/B
+
+
+Greedy
+1746A - https://codeforces.com/contest/1746/problem/A
+1746B - https://codeforces.com/contest/1746/problem/B
+

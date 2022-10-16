@@ -1,5 +1,13 @@
 // https://codeforces.com/contest/1746/problem/A
+// Greedy 
 
+/*
+Algorithm 
+
+1. If we find any one 1 in the whole array, then we can directly make it return Yes directly 
+otherwise NO
+
+*/
 #include<bits/stdc++.h>
 using namespace std;
 
