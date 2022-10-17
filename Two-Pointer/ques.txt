@@ -20,4 +20,12 @@ Leetcode Easy
 350. Intersection of Two Arrays II
 202. Happy Number
 821. Shortest Distance to a Character
+922. Sort Array By Parity II
+917. Reverse Only Letters
+125. Valid Palindrome
+925. Long Pressed Name
+88. Merge Sorted Array
+
+
+Leetcode Medium 
 
