@@ -28,4 +28,5 @@ Leetcode Easy
 
 
 Leetcode Medium 
+2396. Strictly Palindromic Number - Algorithm missing
 
