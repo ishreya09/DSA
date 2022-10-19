@@ -3,6 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// take cummulative frequency and check if it repeats in the array 
+
 int MinimizeThickness(vector<int> &nums){
     set<int> sub;
     int f=0; // f is cummulative frequency

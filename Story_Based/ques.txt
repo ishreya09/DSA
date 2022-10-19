@@ -6,6 +6,7 @@ Two Pointer
 1746A - https://codeforces.com/contest/1746/problem/A
 1746B - https://codeforces.com/contest/1746/problem/B - *
 1646B - https://codeforces.com/problemset/problem/1646/B
+1741C - https://codeforces.com/problemset/problem/1741/C - *
 
 
 Greedy

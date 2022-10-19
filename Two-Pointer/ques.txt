@@ -29,4 +29,9 @@ Leetcode Easy
 
 Leetcode Medium 
 2396. Strictly Palindromic Number - Algorithm missing
+1679. Max Number of K-Sum Pairs
+2410. Maximum Matching of Players With Trainers
+75. Sort Colors
+1963. Minimum Number of Swaps to Make the String Balanced
+1471. The k Strongest Values in an Array
 

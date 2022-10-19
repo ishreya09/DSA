@@ -1,0 +1,7 @@
+* Represents number of times getting stuck in that problem
+# represents questions which I solved and I really liked them
+
+Leetcode
+
+
+*# - 1963. Minimum Number of Swaps to Make the String Balanced
