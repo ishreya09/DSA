@@ -34,4 +34,8 @@ Leetcode Medium
 75. Sort Colors
 1963. Minimum Number of Swaps to Make the String Balanced
 1471. The k Strongest Values in an Array
-
+2130. Maximum Twin Sum of a Linked List
+2161. Partition Array According to Given Pivot
+1237. Find Positive Integer Solution for a Given Equation
+1721. Swapping Nodes in a Linked List
+2149. Rearrange Array Elements by Sign
