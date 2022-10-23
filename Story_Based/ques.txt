@@ -13,3 +13,10 @@ Greedy
 1746A - https://codeforces.com/contest/1746/problem/A
 1746B - https://codeforces.com/contest/1746/problem/B
 
+Brute Force
+
+750A - https://codeforces.com/problemset/problem/750/A
+
+Binary Search
+
+

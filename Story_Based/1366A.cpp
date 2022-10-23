@@ -3,6 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// O(1)
+
 long int ShovelsAndSwords(long int a,long int b){
     if (2*a<b){ // if a or b is twice than that of the other value
         return a;

@@ -39,3 +39,8 @@ Leetcode Medium
 1237. Find Positive Integer Solution for a Given Equation
 1721. Swapping Nodes in a Linked List
 2149. Rearrange Array Elements by Sign
+881. Boats to Save People
+167. Two Sum II - Input Array Is Sorted
+986. Interval List Intersections
+
+795. Number of Subarrays with Bounded Maximum - logical error
