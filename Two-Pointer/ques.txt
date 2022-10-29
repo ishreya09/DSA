@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/two-pointers-technique/
+
 Leetcode Easy
 
 557. Reverse Words in a String III
@@ -42,5 +44,20 @@ Leetcode Medium
 881. Boats to Save People
 167. Two Sum II - Input Array Is Sorted
 986. Interval List Intersections
+969. Pancake Sorting
+1861. Rotating the Box
+
+481. Magical String
+2105. Watering Plants II
+443. String Compression
+2337. Move Pieces to Obtain a String
 
 795. Number of Subarrays with Bounded Maximum - logical error
+
+gfg Easy
+
+Palindrome Sentence - https://practice.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1?page=1&difficulty[]=0&category[]=two-pointer-algorithm&sortBy=submissions
+First negative integer in every window of size k - https://practice.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1?page=1&difficulty[]=0&category[]=two-pointer-algorithm&sortBy=submissions
+Intersection of two arrays - https://practice.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1?page=1&difficulty[]=0&category[]=two-pointer-algorithm&sortBy=submissions
+Smallest window containing 0, 1 and 2
+

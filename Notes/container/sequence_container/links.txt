@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/how-to-find-the-maximum-element-of-a-vector-using-stl-in-c/
+https://www.geeksforgeeks.org/how-to-find-the-minimum-and-maximum-element-of-a-vector-using-stl-in-c/
+https://www.geeksforgeeks.org/stdmax-in-cpp/?ref=lbp
+https://www.geeksforgeeks.org/stdmin-in-cpp/?ref=lbp 

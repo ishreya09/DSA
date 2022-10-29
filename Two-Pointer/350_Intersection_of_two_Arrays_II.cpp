@@ -39,9 +39,8 @@ all elements into the memory at once?
 /*
 Algorithm
 
-1. 
-2. 
-3.
+1. Sort the array and take two pointers to each of the start of the array
+2. Move through the array similar to the approach in linked list
 
 */
 

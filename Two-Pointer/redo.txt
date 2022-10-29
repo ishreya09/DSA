@@ -7,3 +7,4 @@ Leetcode
 *# - 1963. Minimum Number of Swaps to Make the String Balanced
 * - 2161. Partition Array According to Given Pivot
 *# - 1237. Find Positive Integer Solution for a Given Equation
+*# - 969. Pancake Sorting
