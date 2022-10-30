@@ -1,4 +1,3 @@
 https://www.geeksforgeeks.org/stdstringerase-in-cpp/
 https://www.geeksforgeeks.org/stdstringappend-in-c/#:~:text=std%3A%3Astring%3A%3Aappend%20%28%29%20in%20C%2B%2B%201%20Syntax%201%20%3A,the%20maximum%20number%20of%20characters.%20...%20More%20items
 
-https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/#:~:text=vector%3A%3Aerase%20%28%29%201%201.%20Run%20a%20loop%20till,decrement%20iterator.%203%203.%20Print%20the%20final%20vector.

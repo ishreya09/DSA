@@ -19,4 +19,7 @@ Brute Force
 
 Binary Search
 
+459B - https://codeforces.com/problemset/problem/459/B
+
+
 

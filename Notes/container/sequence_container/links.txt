@@ -2,3 +2,7 @@ https://www.geeksforgeeks.org/how-to-find-the-maximum-element-of-a-vector-using-
 https://www.geeksforgeeks.org/how-to-find-the-minimum-and-maximum-element-of-a-vector-using-stl-in-c/
 https://www.geeksforgeeks.org/stdmax-in-cpp/?ref=lbp
 https://www.geeksforgeeks.org/stdmin-in-cpp/?ref=lbp 
+
+https://www.geeksforgeeks.org/vector-insert-function-in-c-stl/
+https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/
+https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/#:~:text=vector%3A%3Aerase%20%28%29%201%201.%20Run%20a%20loop%20till,decrement%20iterator.%203%203.%20Print%20the%20final%20vector.
