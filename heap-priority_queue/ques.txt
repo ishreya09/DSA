@@ -24,6 +24,7 @@ Medium
 373. Find K Pairs with Smallest Sums
 2357. Make Array Zero by Subtracting Equal Amounts
 2342. Max Sum of a Pair With Equal Sum of Digits 
+659. Split Array into Consecutive Subsequences
 
 Hard
 2344. Minimum Deletions to Make Array Divisible
