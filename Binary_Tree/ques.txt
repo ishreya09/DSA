@@ -7,3 +7,13 @@ leetcode easy
 2236. Root Equals Sum of Children
 1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree
 938. Range Sum of BST
+617. Merge Two Binary Trees
+897. Increasing Order Search Tree
+700. Search in a Binary Search Tree
+226. Invert Binary Tree
+104. Maximum Depth of Binary Tree
+94. Binary Tree Inorder Traversal
+145. Binary Tree Postorder Traversal
+144. Binary Tree Preorder Traversal
+965. Univalued Binary Tree
+111. Minimum Depth of Binary Tree

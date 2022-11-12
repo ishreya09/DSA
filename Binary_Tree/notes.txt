@@ -22,4 +22,16 @@ Think of each node as another seperate binary tree.
 if root is the node, then root->left will be a seperate binary tree and root->right will be seperate binary tree
 and so on.
 
+Inorder Traversal - left root right
+PreOrder Traversal - root left right
+Post Order Traversal - left right root
 
+For finding the inorder successor of a node in a binary search tree,
+Think of each node as another seperate binary search tree.
+if root is the node, then root->left will be a seperate binary search tree and root->right will be seperate binary search tree
+and so on.
+
+For finding the inorder predecessor of a node in a binary search tree,
+Think of each node as another seperate binary search tree.
+if root is the node, then root->left will be a seperate binary search tree and root->right will be seperate binary search tree
+and so on.
