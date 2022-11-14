@@ -108,3 +108,38 @@ public:
         
     }
 };
+
+class Solution1 {
+public:
+    bool isCousins(TreeNode* root, int x, int y) {
+        queue<TreeNode*>q;
+        q.push(root);
+        unordered_map<int,int>mp;
+        while(!q.empty())
+        {
+            int n = q.size();
+            while(n--)
+            {
+                TreeNode* node = q.front();
+                q.pop();
+                
+                if(node->left)
+                {
+                    mp[node->left->val] = node->val;
+                    q.push(node->left);
+                }
+                
+                if(node->right)
+                {
+                    mp[node->right->val] = node->val;
+                    q.push(node->right);
+                }
+            }
+            
+            if(mp.find(x)!=mp.end() && mp.find(y)!=mp.end() && mp[x]!=mp[y])
+                return true;
+            mp.clear();
+        }
+        return false;
+    }
+};
