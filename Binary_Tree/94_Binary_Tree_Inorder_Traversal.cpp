@@ -58,15 +58,15 @@ struct TreeNode
 
 class Solution {
 public:
-    void inorder(TreeNode* root, vector<int> &a){
-        // left root right
-        if (root==NULL){
-            return;
+        void inorder(TreeNode* root, vector<int> &a){
+            // left root right
+            if (root==NULL){
+                return;
+            }
+            inorder(root->left,a);
+            a.push_back(root->val);
+            inorder(root->right,a);
         }
-        inorder(root->left,a);
-        a.push_back(root->val);
-        inorder(root->right,a);
-    }
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> a;
         inorder(root,a);

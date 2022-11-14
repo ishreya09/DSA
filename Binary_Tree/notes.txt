@@ -35,3 +35,155 @@ For finding the inorder predecessor of a node in a binary search tree,
 Think of each node as another seperate binary search tree.
 if root is the node, then root->left will be a seperate binary search tree and root->right will be seperate binary search tree
 and so on.
+
+// C++ program to find the inorder successor of a node in a BST
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+};
+
+Node* getNewNode(int data) {
+    Node* newNode = new Node();
+    newNode->data = data;
+    newNode->left = newNode->right = NULL;
+    return newNode;
+}
+
+Node* insert(Node* root, int data) {
+    if (root == NULL) {
+        root = getNewNode(data);
+    }
+    else if (data <= root->data) {
+        root->left = insert(root->left, data);
+    }
+    else {
+        root->right = insert(root->right, data);
+    }
+    return root;
+}
+
+Node* findMin(Node* root) {
+    while (root->left != NULL) root = root->left;
+    return root;
+}
+
+Node* findSuccessor(Node* root, int data) {
+    Node* current = root;
+    Node* successor = NULL;
+    Node* ancestor = root;
+    while (current != NULL && current->data != data) {
+        if (current->data > data) {
+            successor = current;
+            current = current->left;
+        }
+        else {
+            current = current->right;
+        }
+    }
+    if (current == NULL) return NULL;
+    if (current->right != NULL) {
+        return findMin(current->right);
+    }
+    else {
+        return successor;
+    }
+}
+
+int main() {
+    Node* root = NULL;
+    root = insert(root, 20);
+    root = insert(root, 8);
+    root = insert(root, 22);
+    root = insert(root, 4);
+    root = insert(root, 12);
+    root = insert(root, 10);
+    root = insert(root, 14);
+    Node* successor = findSuccessor(root, 8);
+    if (successor == NULL) {
+        cout << "No Successor Found" << endl;
+    }
+    else {
+        cout << "Successor is " << successor->data << endl;
+    }
+}
+
+// C program to find the inorder successor of a node in a BST
+#include <stdio.h>
+#include <stdlib.h> 
+
+struct Node {
+    int data;
+    struct Node* left;
+    struct Node* right;
+};
+
+struct Node* getNewNode(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = data;
+    newNode->left = newNode->right = NULL;
+    return newNode;
+}
+
+struct Node* insert(struct Node* root, int data) {
+    if (root == NULL) {
+        root = getNewNode(data);
+    }
+    else if (data <= root->data) {
+        root->left = insert(root->left, data);
+    }
+    else {
+        root->right = insert(root->right, data);
+    }
+    return root;
+}
+
+struct Node* findMin(struct Node* root) {
+    while (root->left != NULL) root = root->left;
+    return root;
+}
+
+struct Node* findSuccessor(struct Node* root, int data) {
+    struct Node* current = root;
+    struct Node* successor = NULL;
+    struct Node* ancestor = root;
+    while (current != NULL && current->data != data) {
+        if (current->data > data) {
+            successor = current;
+            current = current->left;
+        }
+        else {
+            current = current->right;
+        }
+    }
+    if (current == NULL) return NULL;
+    if (current->right != NULL) {
+        return findMin(current->right);
+    }
+    else {
+        return successor;
+    }
+}
+
+
+int main() {
+    struct Node* root = NULL;
+    root = insert(root, 20);
+    root = insert(root, 8);
+    root = insert(root, 22);
+    root = insert(root, 4);
+    root = insert(root, 12);
+    root = insert(root, 10);
+    root = insert(root, 14);
+    struct Node* successor = findSuccessor(root, 8);
+    if (successor == NULL) {
+        printf("No Successor Found\n");
+    }
+    else {
+        printf("Successor is %d\n", successor->data);
+    }
+}
+

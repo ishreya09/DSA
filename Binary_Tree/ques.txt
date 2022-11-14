@@ -17,3 +17,18 @@ leetcode easy
 144. Binary Tree Preorder Traversal
 965. Univalued Binary Tree
 111. Minimum Depth of Binary Tree
+872_Leaf_Similar_Trees.cpp
+637. Average of Levels in Binary Tree
+1022. Sum of Root To Leaf Binary Numbers
+257. Binary Tree Paths
+653. Two Sum IV - Input is a BST
+606. Construct String from Binary Tree
+404. Sum of Left Leaves
+783. Minimum Distance Between BST Nodes
+530. Minimum Absolute Difference in BST - same solution as 783
+100. Same Tree
+563. Binary Tree Tilt
+101. Symmetric Tree
+993. Cousins in Binary Tree
+
+leetcode medium
