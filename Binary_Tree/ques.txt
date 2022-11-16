@@ -17,7 +17,7 @@ leetcode easy
 144. Binary Tree Preorder Traversal
 965. Univalued Binary Tree
 111. Minimum Depth of Binary Tree
-872_Leaf_Similar_Trees.cpp
+872 Leaf Similar Trees
 637. Average of Levels in Binary Tree
 1022. Sum of Root To Leaf Binary Numbers
 257. Binary Tree Paths
@@ -30,5 +30,10 @@ leetcode easy
 563. Binary Tree Tilt
 101. Symmetric Tree
 993. Cousins in Binary Tree
+543. Diameter of Binary Tree
+501. Find Mode in Binary Search Tree
+671. Second Minimum Node In a Binary Tree
+572. Subtree of Another Tree
+112. Path Sum
 
 leetcode medium

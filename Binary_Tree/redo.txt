@@ -1,2 +1,7 @@
+leetcode easy
+
 257. Binary Tree Paths
 606. Construct String from Binary Tree
+572. Subtree of Another Tree
+543. Diameter of Binary Tree
+112. Path Sum
