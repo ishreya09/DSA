@@ -1,3 +1,7 @@
+gfg easy
+
+Check for BST
+
 gfg Medium
 
 Height of Binary Tree
@@ -37,3 +41,6 @@ leetcode easy
 112. Path Sum
 
 leetcode medium
+
+1302. Deepest Leaves Sum
+1315. Sum of Nodes with Even-Valued Grandparent

@@ -27,6 +27,7 @@ Leetcode Easy
 125. Valid Palindrome
 925. Long Pressed Name
 88. Merge Sorted Array
+696. Count Binary Substrings
 
 
 Leetcode Medium 
