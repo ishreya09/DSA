@@ -105,3 +105,30 @@ class Solution
         
     }
 };
+
+class Solution1
+{
+    public:
+    Node* deleteNode(Node *head, int x)
+    {
+      //Your code here
+      if (head == NULL){
+          return head;
+      }
+      else if(x==1){
+          head= head->next;
+          return head;
+      }
+      Node* temp =head;
+      while(--x){
+          temp=temp->next;
+      }
+      temp->prev->next=temp->next;
+      if (temp->next !=NULL){
+          temp->next->prev= temp->prev;
+          delete(temp);
+      }
+      return head;
+      
+    }
+};

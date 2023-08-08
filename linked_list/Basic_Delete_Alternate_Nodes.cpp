@@ -86,3 +86,23 @@ void deleteAlt(struct Node *head){
     }
     
 }
+
+void deleteAlt1(struct Node *head){
+    // Code here
+
+    if(head==NULL || head->next==NULL){
+        return;
+    }
+    Node* slow= head;
+    Node* fast =slow->next;
+    
+    while(fast!=NULL){
+        slow->next=fast->next;
+        slow=slow->next;
+        delete(fast);
+        if (slow!=NULL)
+            fast=slow->next;
+        else
+            fast=slow;
+    }
+}
