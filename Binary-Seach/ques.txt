@@ -1,3 +1,7 @@
 Leetcode Easy
 
 268. Missing Number
+
+leetcode medium
+
+33. Search in Rotated Array
