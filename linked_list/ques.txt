@@ -55,6 +55,10 @@ Split a Circular Linked List into two halves
 Intersection of two sorted Linked lists
 Rotate doubly Linked List
 Deletion and Reverse in Linked List
+Count Pairs whose sum is equal to X
+Union of Two Linked Lists
+Find the first node of loop in linked list - good ques
+
 
 Linked List that is Sorted Alternatingly - ****testcase error
 Insert in Sorted way in a Sorted DLL - **segmentation fault
