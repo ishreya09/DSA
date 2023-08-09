@@ -78,3 +78,17 @@ int fractional_node(struct Node *head, int k)
     }
     return fn->data;
 }
+
+int fn(struct Node* head,int k){
+    int i=1;
+    Node* fast=head,*slow=head;
+    while(fast->next!=NULL){
+        if(i==k){
+            slow=slow->next;
+            i=0;
+        }
+        i++;
+        fast=fast->next;
+    }
+    return slow->data;
+}
