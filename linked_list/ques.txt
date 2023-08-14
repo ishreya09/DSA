@@ -58,6 +58,12 @@ Deletion and Reverse in Linked List
 Count Pairs whose sum is equal to X
 Union of Two Linked Lists
 Find the first node of loop in linked list - good ques
+Multiply two linked lists
+XOR Linked list
+
+gfg Hard
+
+Binary Tree to DLL
 
 
 Linked List that is Sorted Alternatingly - ****testcase error

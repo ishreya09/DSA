@@ -80,6 +80,20 @@ Algorithm
 1. Find the length of both the lists and delete the difference of length no. of nodes respectively from the head ptr
 2. We will find intersection in this section only, so now we traverse the list together, and find if any element matches 
 and return that element, otherwise we return null when both lists get traversed.
+
+alternative
+
+Using Two pointers : 
+
+Initialize two pointers ptr1 and ptr2  at head1 and  head2.
+Traverse through the lists, one node at a time.
+When ptr1 reaches the end of a list, then redirect it to head2.
+similarly, when ptr2 reaches the end of a list, redirect it to the head1.
+Once both of them go through reassigning, they will be equidistant from 
+ the collision point
+If at any node ptr1 meets ptr2, then it is the intersection node.
+After the second iteration if there is no intersection node it returns NULL.
+
 */
 
 #include<bits/stdc++.h>
@@ -131,3 +145,45 @@ public:
 		return NULL;
     }
 };
+
+// Alternate solution
+
+// Intersection Point in Y Shaped Linked Lists
+// Medium
+
+// https://practice.geeksforgeeks.org/problems/intersection-point-in-y-shapped-linked-lists/1?page=1&category[]=Linked%20List&sortBy=submissions
+
+struct Node {
+  int data;
+  struct Node *next;
+  Node(int x) {
+    data = x;
+    next = NULL;
+  }
+};
+
+int intersectPoint(Node* head1, Node* head2)
+{
+    // Your Code Here
+    Node *ptr1 =head1,*ptr2=head2;
+    if(ptr1==NULL || ptr2==NULL){
+        return -1;
+    }
+    while (ptr1!=ptr2){
+        ptr1=ptr1->next;
+        ptr2=ptr2->next;
+        
+        if(ptr1==NULL){
+            ptr1=head2;
+        }
+        if(ptr2==NULL){
+            ptr2=head1;
+        }
+        if (ptr1==ptr2){
+            return ptr1->data;
+        }
+    }
+    return ptr1->data;
+    
+    
+}
