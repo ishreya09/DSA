@@ -61,6 +61,12 @@ Find the first node of loop in linked list - good ques
 Multiply two linked lists
 XOR Linked list
 
+GFG Medium
+
+Rotate a Linked list
+Remove loop in Linked List
+
+
 gfg Hard
 
 Binary Tree to DLL
