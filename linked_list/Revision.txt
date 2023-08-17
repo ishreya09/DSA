@@ -1,2 +1,3 @@
 Check If Circular Linked List
 Count nodes of linked list
+All basic ques done 

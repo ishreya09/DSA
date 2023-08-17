@@ -65,6 +65,8 @@ GFG Medium
 
 Rotate a Linked list
 Remove loop in Linked List
+Flatten binary tree to linked list  
+Flattening a Linked List
 
 
 gfg Hard
