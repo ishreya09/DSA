@@ -91,3 +91,15 @@ class Solution
     }
     
 };
+
+// recursive method
+
+Node* reverse (Node* head){
+    if(head==NULL || head->next==NULL){
+        return head;
+    }
+    Node*rest = reverse(head->next);
+    head->next->next=head=head;
+    head->next=NULL; // for last node
+    return rest;
+}

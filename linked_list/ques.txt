@@ -60,6 +60,7 @@ Union of Two Linked Lists
 Find the first node of loop in linked list - good ques
 Multiply two linked lists
 XOR Linked list
+Intersection of Two Linked Lists
 
 GFG Medium
 
@@ -67,11 +68,16 @@ Rotate a Linked list
 Remove loop in Linked List
 Flatten binary tree to linked list  
 Flattening a Linked List
+Merge two sorted linked lists
+Binary Tree to CDLL
+Merge Sort for Linked List
+Reverse alternate nodes in Link List
 
 
 gfg Hard
 
 Binary Tree to DLL
+Subtraction in Linked List
 
 
 Linked List that is Sorted Alternatingly - ****testcase error
