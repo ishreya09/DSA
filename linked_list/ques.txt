@@ -72,6 +72,7 @@ Merge two sorted linked lists
 Binary Tree to CDLL
 Merge Sort for Linked List
 Reverse alternate nodes in Link List
+Delete nodes having greater value on right
 
 
 gfg Hard

@@ -43,7 +43,12 @@ Constraints:
 /*
 Algorithm
 
-1. 
+1. If odd is null - return
+2. Find the end node then in O(n) TC
+3. travrse through the head now with counter i initialized as 1 and if i%2==0 - then delete the node there and
+add the node after the end pointer of the list
+4. Add all the nodes only after the end pointer. This way we traverse in O(n) time complexity 
+and store the rest of alternate nodes in reverse order because we added from the end's front.
 
 */
 
