@@ -1,4 +1,3 @@
-// WRONG ANSWER
 /*
 Prime List
 Medium

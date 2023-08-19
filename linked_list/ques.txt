@@ -75,6 +75,12 @@ Merge Sort for Linked List
 Reverse alternate nodes in Link List
 Delete nodes having greater value on right
 Merge K sorted linked lists
+Rearrange a linked list
+Leaves To DLL
+Polynomial Addition
+Reverse a Linked List in groups of given size
+Find Anagrams in Linked List
+Length of longest palindrome in linked list
 
 
 gfg Hard

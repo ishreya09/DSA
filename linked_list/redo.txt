@@ -8,3 +8,9 @@ Easy GFG ques
 * 160. Intersection of Two Linked Lists
 #* Find the first node of loop in linked list 
 #* Binary Tree to DLL
+Flatten binary tree to linked list  
+Flattening a Linked List
+Leaves to DLL
+Reverse a Linked List in groups of given size
+#* Find Anagrams in Linked List
+##** Length of longest palindrome in linked list

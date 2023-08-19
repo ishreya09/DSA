@@ -47,6 +47,9 @@ Constraints:
 /*
 Algorithm
 
+1. take mod at each step
+2. Get the number in long long format
+3. At last multiply it and return it after doing mod
 */
 
 #include<bits/stdc++.h>
@@ -61,3 +64,28 @@ struct Node {
         next = NULL;
     }
 };
+
+
+/*You are required to complete this method*/
+long long  multiplyTwoLists (Node* first, Node* second)
+{
+  //Your code here
+   long long N= 1000000007;
+    long long num1 = 0, num2 = 0;
+    while (first || second){
+          
+        if(first){
+            num1 = ((num1)*10)%N + first->data;
+            first = first->next;
+        }
+          
+        if(second)
+        {
+            num2 = ((num2)*10)%N + second->data;
+            second = second->next;
+        }
+          
+    }
+    return ((num1%N)*(num2%N))%N;
+  
+}

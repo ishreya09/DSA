@@ -1,4 +1,3 @@
-//WRONG !!
 /*
 Delete nodes having greater value on right
 Medium
