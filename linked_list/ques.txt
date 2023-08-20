@@ -62,6 +62,8 @@ Multiply two linked lists
 XOR Linked list
 Intersection of Two Linked Lists
 Sort a k sorted doubly linked list
+Linked List in Zig-Zag fashion
+
 
 GFG Medium
 
@@ -81,6 +83,8 @@ Polynomial Addition
 Reverse a Linked List in groups of given size
 Find Anagrams in Linked List
 Length of longest palindrome in linked list
+Insertion Sort for Singly Linked List
+Quick Sort on Linked List
 
 
 gfg Hard
