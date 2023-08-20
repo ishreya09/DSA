@@ -1,0 +1,18 @@
+Maps
+
+https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
+
+https://www.geeksforgeeks.org/different-ways-to-initialize-a-map-in-cpp/?ref=lbp
+
+https://www.geeksforgeeks.org/inserting-elements-in-stdmap-insert-emplace-and-operator/?ref=lbp
+
+https://www.geeksforgeeks.org/searching-map-using-stdmap-functions-c/ - ***
+
+https://www.geeksforgeeks.org/different-ways-delete-elements-stdmap-erase-clear/?ref=lbp
+
+https://www.geeksforgeeks.org/mapat-mapswap-c-stl/?ref=lbp
+
+https://www.geeksforgeeks.org/passing-map-as-reference-in-cpp-stl/?ref=lbp
+
+https://www.geeksforgeeks.org/how-to-traverse-a-stl-map-in-reverse-direction/?ref=lbp
+
