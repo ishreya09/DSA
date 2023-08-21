@@ -4,11 +4,14 @@ Easy
 
 https://leetcode.com/problems/longest-harmonious-subsequence/
 
-We define a harmonious array as an array where the difference between its maximum value and its minimum value is exactly 1.
+We define a harmonious array as an array where the difference between 
+its maximum value and its minimum value is exactly 1.
 
-Given an integer array nums, return the length of its longest harmonious subsequence among all its possible subsequences.
+Given an integer array nums, return the length of its longest harmonious 
+subsequence among all its possible subsequences.
 
-A subsequence of array is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements.
+A subsequence of array is a sequence that can be derived from the array 
+by deleting some or no elements without changing the order of the remaining elements.
 
  
 
@@ -38,7 +41,8 @@ Constraints:
 /*
 Algorithm
 
-1. Sort the array and get the frequency of each character and check simentaneously if the current number
+1. Sort the array and get the frequency of each character and 
+check simentaneously if the current number
 and one less than current number's freq is greater than the max freq till now
 2. Step one results in max freq which gives the length of longest Harmonious subsequence
 

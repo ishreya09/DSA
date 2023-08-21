@@ -75,3 +75,32 @@ public:
         return count;
     }
 };
+
+// Better Sol
+/*
+Store elements of array in set and ten iterate through nums array and find nums[i]-diff 
+and nums[i]-2*diff. if its not equal to s.end() then increment count
+
+Time Complexity : O(n)
+Space Complexity : O(n)
+*/
+class Solution1 {
+public:
+    int arithmeticTriplets(vector<int>& nums, int diff) {
+
+        int count =0;
+
+        // JUST CONVERTING ARRAY TO SET
+        set<int>s(nums.begin(),nums.end());
+
+        for(int i=0;i<s.size();i++)
+        {
+            if(s.find(nums[i]-diff)!=s.end()  && s.find(nums[i]-2*diff)!=s.end())
+            // SET .END HONE SE PEHLE (nums[i]-diff) YE VALUE SET MEIN MILI YA NAHI
+            {
+                count++;
+            }
+        }   
+        return count;    
+    }
+};

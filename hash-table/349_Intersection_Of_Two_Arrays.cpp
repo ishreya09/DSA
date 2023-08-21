@@ -65,3 +65,34 @@ public:
         return a;
     }
 };
+
+// Better sol
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        map<int,int> f1,f2;
+        for(int i=0;i<nums1.size();i++){
+            f1[nums1[i]]++;
+        }
+        for(int i=0;i<nums2.size();i++){
+            f2[nums2[i]]++;
+        }
+        vector<int> ans;
+        auto it1=f1.begin(),it2 = f2.begin();
+        while(it1!=f1.end() && it2!=f2.end()){
+            if (it1->first==it2->first){
+                cout<< it1->first;
+                ans.push_back(it1->first);
+                ++it2;
+                ++it1;
+            }
+            else if (it1->first>it2->first){
+                ++it2;
+            }
+            else{
+                ++it1;
+            }
+        }
+        return ans;
+    }
+};
