@@ -46,6 +46,7 @@ Easy
 2309. Greatest English Letter in Upper and Lower Case
 1122. Relative Sort Array
 645. Set Mismatch
+
 1. Two Sum
 2744. Find Maximum Number of String Pairs
 2670. Find the Distinct Difference Array
@@ -62,6 +63,7 @@ Easy
 1399. Count Largest Group
 1763. Longest Nice Substring
 242. Valid Anagram
+387. First Unique Character in a String
 
 
 
