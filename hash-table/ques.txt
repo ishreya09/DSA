@@ -56,17 +56,18 @@ Easy
 884. Uncommon Words from Two Sentences
 2441. Largest Positive Integer That Exists With Its Negative
 1160. Find Words That Can Be Formed by Characters
+2475. Number of Unequal Triplets in Array - ***
+1002. Find Common Characters
+929. Unique Email Addresses
+1399. Count Largest Group
+1763. Longest Nice Substring
+242. Valid Anagram
 
 
-Doubt
-2475. Number of Unequal Triplets in Array
+
 
 Easy
 
-1002
-1160
-929
-1399
 2062
 2395
 1394
