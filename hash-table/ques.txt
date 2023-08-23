@@ -47,6 +47,19 @@ Easy
 1122. Relative Sort Array
 645. Set Mismatch
 1. Two Sum
+2744. Find Maximum Number of String Pairs
+2670. Find the Distinct Difference Array
+2716. Minimize String Length
+2570. Merge Two 2D Arrays by Summing Values
+1460. Make Two Arrays Equal by Reversing Subarrays
+2506. Count Pairs Of Similar Strings
+884. Uncommon Words from Two Sentences
+2441. Largest Positive Integer That Exists With Its Negative
+1160. Find Words That Can Be Formed by Characters
+
+
+Doubt
+2475. Number of Unequal Triplets in Array
 
 Easy
 
