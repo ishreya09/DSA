@@ -64,6 +64,17 @@ Easy
 1763. Longest Nice Substring
 242. Valid Anagram
 387. First Unique Character in a String
+2062. Count Vowel Substrings of a String
+383. Ransom Note
+389. Find the Difference
+748. Shortest Completing Word
+13. Roman to Integer
+1331. Rank Transform of an Array
+1189. Maximum Number of Balloons
+2133. Check if Every Row and Column Contains All Numbers
+1394. Find Lucky Integer in an Array
+2395. Find Subarrays With Equal Sum
+169. Majority Element
 
 
 
