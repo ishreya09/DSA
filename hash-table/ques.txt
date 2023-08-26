@@ -78,6 +78,9 @@ Easy
 2190. Most Frequent Number Following Key In an Array
 2729. Check if The Number is Fascinating
 205. Isomorphic Strings
+2423. Remove Letter To Equalize Frequency
+2347. Best Poker Hand
+
 
 Leetcode Medium
 
