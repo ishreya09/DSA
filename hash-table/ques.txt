@@ -75,7 +75,15 @@ Easy
 1394. Find Lucky Integer in an Array
 2395. Find Subarrays With Equal Sum
 169. Majority Element
+2190. Most Frequent Number Following Key In an Array
+2729. Check if The Number is Fascinating
+205. Isomorphic Strings
 
+Leetcode Medium
+
+2657. Find the Prefix Common Array of Two Arrays
+49. Group Anagrams
+1807. Evaluate the Bracket Pairs of a String
 
 
 
