@@ -80,6 +80,8 @@ Easy
 205. Isomorphic Strings
 2423. Remove Letter To Equalize Frequency
 2347. Best Poker Hand
+219. Contains Duplicate II
+2682. Find the Losers of the Circular Game
 
 
 Leetcode Medium
