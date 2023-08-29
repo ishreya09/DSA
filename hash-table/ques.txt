@@ -82,6 +82,8 @@ Easy
 2347. Best Poker Hand
 219. Contains Duplicate II
 2682. Find the Losers of the Circular Game
+290. Word Pattern
+914. X of a Kind in a Deck of Cards
 
 
 Leetcode Medium
@@ -89,6 +91,9 @@ Leetcode Medium
 2657. Find the Prefix Common Array of Two Arrays
 49. Group Anagrams
 1807. Evaluate the Bracket Pairs of a String
+1282. Group the People Given the Group Size They Belong To
+1817. Finding the Users Active Minutes
+2442. Count Number of Distinct Integers After Reverse Operations
 
 
 
