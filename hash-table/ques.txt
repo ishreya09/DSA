@@ -94,6 +94,14 @@ Leetcode Medium
 1282. Group the People Given the Group Size They Belong To
 1817. Finding the Users Active Minutes
 2442. Count Number of Distinct Integers After Reverse Operations
+2405. Optimal Partition of String
+811. Subdomain Visit Count
+1418. Display Table of Food Orders in a Restaurant
+2336. Smallest Number in Infinite Set
+2186. Minimum Number of Steps to Make Two Strings Anagram II
+2225. Find Players With Zero or One Losses
+791. Custom Sort String
+609. Find Duplicate File in System
 
 
 
