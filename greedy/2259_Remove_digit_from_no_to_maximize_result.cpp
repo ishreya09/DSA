@@ -100,3 +100,30 @@ int main(int argc, char const *argv[])
     cout << Solution().removeDigit(s, d);
     return 0;
 }
+
+string static compare(string a, string b)
+{
+    for (int i = 0; i < a.length(); i++)
+    {
+        if (a[i] > b[i])
+        {
+            return a;
+        }
+        if (a[i] < b[i])
+        {
+            return b;
+        }
+    }
+    return b;
+}
+
+string removeDigit(string number, char digit)
+{
+    string t="0";
+    for(int i= number.length()-1;i>=0;i--){
+        if (number[i]==digit){
+            t=compare(t,number.substr(0,i)+number.substr(i+1,number.length()));
+        }
+    }
+    return t;
+}

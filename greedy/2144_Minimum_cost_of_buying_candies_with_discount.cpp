@@ -48,14 +48,15 @@ Constraints:
 
 */
 
-        /*
-        Algorithm - see a pattern
+/*
 
-        1. Sort the cost in decending form
-        2. The first two elements sum will add up in cost and the
-        third element could be free
-        3. Therefore at an interval of 3, we can get a free candy , while we add up the rest
-        */
+Algorithm - see a pattern
+1. Sort the cost in decending form
+2. The first two elements sum will add up in cost and the
+third element could be free
+3. Therefore at an interval of 3, we can get a free candy , while we add up the rest
+
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

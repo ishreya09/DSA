@@ -8,7 +8,8 @@ Assume you are an awesome parent and want to give your children some cookies. Bu
 most one cookie.
 
 Each child i has a greed factor g[i], which is the minimum size of a cookie that the child will be content with;
-and each cookie j has a size s[j]. If s[j] >= g[i], we can assign the cookie j to the child i, and the child i will be content.
+and each cookie j has a size s[j]. If s[j] >= g[i], we can assign the cookie j to the child i, 
+and the child i will be content.
 Your goal is to maximize the number of your content children and output the maximum number.
 
 
@@ -42,7 +43,8 @@ Constraints:
         2. Sort both g and s vectors
         3. Start checking simentanously for greed factor <= size of cookie (2 loops- one for g and one for s)
         4. the value of j need not be written as j=i or set to 0 as it while checking simentaneously, 
-         the next child with greater greed would also need a greater j and also it would cause repitions in giving the cookie which we don't want
+         the next child with greater greed would also need a greater j and also it would cause repitions 
+         in giving the cookie which we don't want
         
 
 */
@@ -57,7 +59,7 @@ public:
     int findContentChildren(vector<int> &g, vector<int> &s)
     {
 
-        if (g.size() == 0 or s.size() == 0)
+        if (g.size() == 0 || s.size() == 0)
         {
             return 0;
         }
@@ -75,7 +77,8 @@ public:
             bool flag = true;
             // j=i;
             // the value of j need not be written as j=i or set to 0 as it while checking simentaneously, 
-            // the next child with greater greed would also need a greater j and also it would cause repitions in giving the cookie which we don't want
+            // the next child with greater greed would also need a greater j and also it would cause repitions 
+            // in giving the cookie which we don't want
             while (flag)
             {
                 if (g[i] <= s[j])
