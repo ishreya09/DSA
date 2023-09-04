@@ -91,3 +91,32 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+
+
+class Solution {
+public:
+    string maxValue(string n, int x) {
+        int i=0;
+        bool negative=false;
+        if (n[i]=='-'){
+            i=1;
+            negative=true;
+        }
+        string s;
+        s.push_back('0'+x);
+        
+        while (i<n.length()){
+            if (n[i] < x+'0' && negative==false){
+                break;
+            }
+            if (n[i] > x+'0' && negative==true){  
+                break;
+            }
+            i++;
+        }        
+        n.insert (i, s);
+        return n;
+            
+    }
+};
+

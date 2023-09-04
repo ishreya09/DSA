@@ -71,19 +71,24 @@ public:
 
         // find maximum value in the vector
         // could have done and checked directly here instead of making a vector and checking for max
-        int m = pair[0];
-        for (int i = 1; i < n / 2; i++)
-        {
-            if (pair[i] >m)
-            {
-                m = pair[i];
-            }
-        }
-        return m;
+        // int m = pair[0];
+        // for (int i = 1; i < n / 2; i++)
+        // {
+        //     if (pair[i] >m)
+        //     {
+        //         m = pair[i];
+        //     }
+        // }
+        // return m;
 
         // this is more efficient
         // sort(pair.begin(),pair.end());
         // return pair[pair.size()-1];
+
+
+        // way to find max element in vector
+        auto m= max_element(pair.begin(),pair.end());
+        return *m;
 
     }
 };
@@ -98,26 +103,26 @@ int main(int argc, char const *argv[])
 }
 
 
-/*
-Alternate Better Method(Memory Efficient)
 
-class Solution{
-public: 
+// Alternate Better Method(Memory Efficient)
+
+class Solution
+{
+public:
     int minPairSum(vector<int> &nums)
     {
-        int n= nums.size();
-        int max= nums[0]+ nums[n-1];
-        int a;
-        for (int i =0; i<n/2; i++){
-            a= nums[i]+ nums[n-i-1];
-            if (a>max){
-                max=a;
-            }
+
+        sort(nums.begin(), nums.end(), greater<int>());
+
+        int n = nums.size();
+        int sum=0;
+        for (int i = 0; i < n / 2; i++)
+        {
+            sum=max<int>(sum, nums[i]+nums[n-i-1]);
         }
-        return max;
+        return sum;
     }
+};
 
-}
 
 
-*/

@@ -78,5 +78,8 @@ Min_and_max_number_of_candies_gfg_easy
 
 
 
+Hard
+
+1665. Minimum Initial Energy to Finish Tasks - not solved
 
 

@@ -37,15 +37,14 @@ It is guaranteed that you can produce a valid time from the given string.
 
 */
 
-        /*
-        Algorithm
+/*
+Algorithm
 
-        1. The 0 th index can only have values- 0,1,2 - if 0th index has max 2
-        2. The 1st index can have values 0-9 - so 9 is the max value if 0 or 1 is there in 0th index - otherwise - 3.
-        3. The 3rd index can have value 0-5, so 5 is the max value
-        4. The 4th index can have value 0-9 , so 9 is the max value
-
-        */
+1. The 0 th index can only have values- 0,1,2 - if 0th index has max 2
+2. The 1st index can have values 0-9 - so 9 is the max value if 0 or 1 is there in 0th index - otherwise - 3.
+3. The 3rd index can have value 0-5, so 5 is the max value
+4. The 4th index can have value 0-9 , so 9 is the max value
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -89,3 +88,27 @@ int main(int argc, char const *argv[])
     return 0;
 }
 
+
+// smaller solution
+
+
+class Solution
+{
+public:
+    string maximumTime(string time)
+    {
+        if (time[0] == '?') {
+            time[0] = (time[1] == '?' || time[1] <= '3') ? '2' : '1';
+        }
+        if (time[1] == '?') {
+            time[1] = (time[0] == '2') ? '3' : '9';
+        }
+        if (time[3] == '?') {
+            time[3] = '5';
+        }
+        if (time[4] == '?') {
+            time[4] = '9';
+        }
+        return time;
+    }
+};

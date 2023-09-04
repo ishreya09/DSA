@@ -82,3 +82,42 @@ public:
         return points;
     }
 };
+
+
+// priority queue solution
+
+class Solution {
+public:
+    int maximumScore(int a, int b, int c) {
+        priority_queue<int> f; // max heap
+        f.push(a);
+        f.push(b);
+        f.push(c);
+        int score=0;
+        if (f.top()==0){
+            return 0;
+        }
+        while(!f.empty()){
+            auto cur=f.top();
+            f.pop();
+            auto prev=--cur;
+            if (!f.empty()){
+                cur= f.top();
+                f.pop();
+                if (prev>0){
+                    f.push(prev);
+                }
+                prev=--cur;
+                if (prev>0){
+                    f.push(prev);
+                }
+                score++;
+            }
+            else{
+                return score;
+            }
+            
+        }
+        return score;
+     }
+};
