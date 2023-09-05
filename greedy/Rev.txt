@@ -28,19 +28,25 @@
 605
 680
 860
+861
+921
+942
+976
+Min and Max number of candies gfg
+11
+122
+55
 
 
 
 left ques/ good ques
 
-11
-122
 1029
 134
 1827
 2078
-55
 621
 763
+Maximum no of meetings gfg 
 
 

@@ -79,12 +79,7 @@ public:
         }
         
         while(i<=j){
-            if (score==0 && power>=tokens[i]){
-                score++;
-                power= power-tokens[i];
-                i++;
-            }
-            else if(score>0 && power>=tokens[i]){
+            if(score>=0 && power>=tokens[i]){
                 score++;
                 power=power-tokens[i];
                 i++;

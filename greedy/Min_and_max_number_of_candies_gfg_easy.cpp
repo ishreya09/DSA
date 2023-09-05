@@ -1,4 +1,6 @@
 /*
+Min and Max number of candies gfg
+
 In a candy store, there are N different types of candies available and the prices of all 
 the N different types of candies are provided to you.
 You are now provided with an attractive offer.

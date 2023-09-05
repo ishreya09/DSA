@@ -56,7 +56,7 @@ public:
                 break;
             }
             if (i== nums.size()-1 && p==0){
-                i=(k);
+                i=k;
                 a= nums[k-1];
                 b= nums[k];
                 k++;
