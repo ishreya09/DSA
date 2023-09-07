@@ -59,7 +59,8 @@ also if size of array is only one - then irrespective of n, it will take only on
 2. If n >0 && tasks.size()>1, then create a map which keeps track of frequency of a character.
 3. We find the maximum frequency of the character 
 4. We also get the number of characters having maximum frequency
-5. Now the time taken will be (max frequency-1)* (n+1) - Here we leave the last row as we don't know how many elements might 
+5. Now the time taken will be (max frequency-1)* (n+1) - Here we leave the last row as we don't 
+know how many elements might 
 come there
 6. Now the time taken will be added with the characters of same frquency
 7. If this count is less than tasks.size(), then this count is wrong and we return tasks.size() - 
@@ -86,7 +87,7 @@ n=2
         
         if k > n, extend intervals (meaning increase n)
         
-        So, res = max((max frequency - 1) * (n + 1) + k, )
+        So, res = max((max frequency - 1) * (n + 1) + k , int(tasks.size()) )
 
 
 

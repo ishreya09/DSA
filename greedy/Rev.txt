@@ -36,17 +36,17 @@ Min and Max number of candies gfg
 11
 122
 55
+1029
+1827
+2078
+Maximum no of meetings gfg 
 
 
 
 left ques/ good ques
 
-1029
-134
-1827
-2078
+134 - not solved
 621
 763
-Maximum no of meetings gfg 
 
 

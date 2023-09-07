@@ -1,4 +1,3 @@
-// Failing at 1 testcase 
 /*
 1665. Minimum Initial Energy to Finish Tasks
 Hard
@@ -64,9 +63,11 @@ Constraints:
 /*
 Algorithm
 
-1. 
-2. 
-3.
+1. Sort the tasks array according to the difference of mininum enrgy and actual energy required to
+complete the task
+2. Iterate through the sorted list, if minimum energy > current energy - then add minimum energy-cur to res
+and cur to minimum energy
+3. We keep on substracting actual energy from the current energy.
 
 */
 
@@ -74,7 +75,29 @@ Algorithm
 using namespace std;
 
 
+class Solution {
+public:
+    bool static cmp(vector<int> &a,vector<int> &b){
+        return a[1]-a[0]> b[1]-b[0];
+    }
+    int minimumEffort(vector<vector<int>>& tasks) {
+        sort(tasks.begin(),tasks.end(),cmp);
 
+        int res = 0, curr = 0; // curr min energy
+
+        for (int i=0;i<tasks.size();i++){
+            if(tasks[i][1] > curr){
+                res+= tasks[i][1]-curr;
+                curr=tasks[i][1];
+            }
+            curr-=tasks[i][0]; 
+        }
+        return res;
+    }
+};
+
+
+// TLE at 1 testcase
 struct Compare {
     bool operator()(pair<int,int> &a, pair<int,int> &b){
         return a.first-a.second < b.first-b.second;
@@ -109,3 +132,5 @@ public:
         return res;
     }
 };
+
+

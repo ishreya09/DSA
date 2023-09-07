@@ -50,17 +50,19 @@ Test data are generated such that at least two houses have different colors.
 
 
 
-        /*
-        Algorithm -         
-        Greedily, the maximum distance will come from either the pair of the leftmost house and possibly some house 
-        on the right with a different color, or the pair of the rightmost house and possibly some house on 
-        the left with a different color.
+/*
+Algorithm -     
 
-        1. start checking from the index 0 and the last element
-        2. The first element which we encounter as different is stored in max
-        3. Check Further for any other chance of getting any maximum element 
-        4. Since the constraint is less, this method works but might fail if larger constraints are given
-        */
+Greedily, the maximum distance will come from either the pair of the leftmost house and possibly some house 
+on the right with a different color, or the pair of the rightmost house and possibly some house on 
+the left with a different color.
+
+1. start checking from the index 0 and the last element
+2. The first element which we encounter as different is stored in max
+3. Check Further for any other chance of getting any maximum element 
+4. Since the constraint is less, this method works but might fail if larger constraints are given
+
+*/
 
 
 #include<bits/stdc++.h>

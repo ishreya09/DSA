@@ -8,7 +8,8 @@ https://leetcode.com/problems/partition-labels/
 You are given a string s. We want to partition the string into as many parts as possible so that each
 letter appears in at most one part.
 
-Note that the partition is done so that after concatenating all the parts in order, the resultant string should be s.
+Note that the partition is done so that after concatenating all the parts in order, 
+the resultant string should be s.
 
 Return a list of integers representing the size of these parts.
 
@@ -33,25 +34,24 @@ Constraints:
 1 <= s.length <= 500
 s consists of lowercase English letters.
 */
-        /*
+/*
 
-        Hint :
-        
-        Try to greedily choose the smallest partition that includes the first letter.
-        If you have something like "abaccbdeffed", then you might need to add b.
-        You can use an map like "last['b'] = 5" to help you expand the width of your partition.
+Hint :
+Try to greedily choose the smallest partition that includes the first letter.
+If you have something like "abaccbdeffed", then you might need to add b.
+You can use an map like "last['b'] = 5" to help you expand the width of your partition.
 
-        Algorithm:
+Algorithm:
 
-        1. Find the last position of each character using unordered map
-        2. we mark the start and the end and take it zero initially 
-        3. As we traverse through the string, compare the end with each character's last index in the string
-        4. When we do the above process, as we traverse through the string, we get our end at the index at 
-        the last character where we have to partition 
-        5. Store end-start+1 in the vector
-        6. We set the start to end +1 and and then again repeat the same while going ahead. 
+1. Find the last position of each character using unordered map
+2. we mark the start and the end and take it zero initially 
+3. As we traverse through the string, compare the end with each character's last index in the string
+4. When we do the above process, as we traverse through the string, we get our end at the index at 
+the last character where we have to partition 
+5. Store end-start+1 in the vector
+6. We set the start to end +1 and and then again repeat the same while going ahead. 
 
-        */
+*/
 
 #include <bits/stdc++.h>
 using namespace std;

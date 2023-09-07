@@ -1,3 +1,6 @@
+// Time Exceeded
+// Algorithm TC : O(n^2)
+
 #include<bits/stdc++.h>
 using namespace std;
 
