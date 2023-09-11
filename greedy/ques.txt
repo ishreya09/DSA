@@ -77,6 +77,7 @@ other easy greedy ques
 2600. K Items With the Maximum Sum
 2383. Minimum Hours of Training to Win a Competition
 2591. Distribute Money to Maximum Children
+2566. Maximum Difference by Remapping a Digit
 
 Maximum_no_of_meetings_gfg_easy
 Min_and_max_number_of_candies_gfg_easy
