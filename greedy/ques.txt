@@ -78,6 +78,7 @@ other easy greedy ques
 2383. Minimum Hours of Training to Win a Competition
 2591. Distribute Money to Maximum Children
 2566. Maximum Difference by Remapping a Digit
+2578. Split With Minimum Sum
 
 Maximum_no_of_meetings_gfg_easy
 Min_and_max_number_of_candies_gfg_easy
@@ -85,6 +86,10 @@ Min_and_max_number_of_candies_gfg_easy
 
 Medium
 
+807. Max Increase to Keep City Skyline
+1689. Partitioning Into Minimum Number Of Deci-Binary Numbers
+2294. Partition Array Such That Maximum Difference Is K
+1529. Minimum Suffix Flips
 
 
 
