@@ -32,9 +32,11 @@ Tech Stack: Python, TensorFlow, MobileNetV2, Tkinter
 
 **MNIST Digit Recognition Model**  
 Tech Stack: Python, TensorFlow, OpenCV, NumPy
-- Trained a model on the MNIST digit classification dataset using RNN, achieving 97.39% accuracy.
-- Implemented the solution with TensorFlow, OpenCV, and NumPy, achieving a loss of 0.099.
-- Demonstrated proficiency in machine learning and deep learning techniques for image classification tasks.  
+- Developed and compared various deep learning models to classify digits from the MNIST dataset.
+- Implemented and evaluated five different architectures and incorporated techniques like batch normalization, dropout, pooling, and early stopping.
+- Achieved 99.46% accuracy by integrating Encoder-Decoder Architechture integrating CNN, early stopping, batch normalization, pooling, and dropout, outperforming traditional FCNN and RNN models
+
+
 
 **Car Price Prediction**  
 Tech Stack: Python, Scikit-Learn, Matplotlib, Pandas, NumPy
